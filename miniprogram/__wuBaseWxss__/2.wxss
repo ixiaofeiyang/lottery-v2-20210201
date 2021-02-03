@@ -1,0 +1,60 @@
+.new-game {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border-top: 1rpx solid rgba(0,0,0,0.12);
+    background: #fff;
+    z-index: 110;
+}
+
+.new-game .new-game-button-wraper {
+    padding: 10px 13px;
+}
+
+.new-game .new-game-button-wraper .new-game-button-desc {
+    font-size: 13px;
+    color: #575757;
+    text-align: center;
+    padding-bottom: 7px;
+}
+
+.new-game .new-game-button-wraper .new-game-button {
+    display: flex;
+    font-size: 15px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: .4px;
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    position: relative;
+    background: #d15143;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+}
+
+.new-game .new-game-button-wraper .new-game-button:after {
+    display: none;
+}
+
+.new-game .new-game-button-wraper .new-game-button:before {
+    display: none;
+}
+
+.new-game .new-game-button-wraper .new-game-button.highlight {
+    background: #b24539;
+}
+
+.new-game .new-game-button-wraper .new-game-button image {
+    width: 24px;
+    height: 21px;
+    align-self: center;
+    margin-right: 7px;
+}
+
+.new-game.iPhoneX {
+    bottom: 15px;
+}

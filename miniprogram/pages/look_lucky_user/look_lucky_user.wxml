@@ -1,0 +1,26 @@
+<navBar title-text="中奖者信息" back-icon="/images/back@3x.png" background="white" bindback="back" />
+
+
+<!-- 配置 自定义的title -->
+<!-- <view style='height: {{height}}px;'></view> -->
+<view style='height: {{88}}px;'></view>
+
+<view style='background:white;height:50rpx;'></view>
+<view class='text_view1'>
+  <view style='height:90%;width:90%;'>
+    已告知中奖者中奖，中奖者信息已经公布如下；开奖7天后中奖者将不能填写地址，届时无法获取信息的中奖用户将不需要您发送奖品。
+  </view>
+</view>
+<view style='background:white;height:50rpx;'></view>
+
+<view wx:for="{{data_list}}">
+  <view style='background:#f0f0f0;height:1rpx;width:100%;'></view>
+  <view   bindtap='look_address' class='user_view'>
+    <view class='view_1'>
+      <image src='{{item.user__picture}}' style='height:50rpx;width:50rpx;'></image>
+    </view>
+    <view class='view_2'>{{item.user__nickname}}</view>
+    <view class='view_3'>></view>
+  </view>
+  <view style='background:#f0f0f0;height:1rpx;width:100%;'></view>
+</view>

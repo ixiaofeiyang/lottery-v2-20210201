@@ -1,0 +1,29 @@
+<view class='title_view'>
+  <view class='nav' style='height: {{status + navHeight}}px;'>
+    <view class='status' style='height: {{status}}px;{{containerStyle}};'></view>
+    <view class='navbar' style='height:{{navHeight}}px;{{containerStyle}};'>
+      <view class='back-icon' bindtap='back'>
+        <image src='/images/back@3x.png'></image>
+      </view>
+
+
+
+      <view class='nav-title' style=' width:70%;display: flex;justify-content: flex-start; align-items: center;'>
+        <text style='{{textStyle}}'>抽奖说明</text>
+      </view>
+
+    </view>
+  </view>
+</view>
+
+
+<!-- <view style='height:50rpx;'></view> -->
+<view style='height: {{top_height+15}}px;'></view>
+
+<view style='width:100%;' class='text_class_view'>
+    <textarea maxlength='5000' fixed='true'  auto-focus  class='text' bindinput='jpms' placeholder='请输入本次抽奖活动的说明' value='{{jpms}}'    ></textarea>
+   
+</view>
+
+<view style='height: 25px;'></view>
+ <view class='botn' bindtap='save'>保存</view>

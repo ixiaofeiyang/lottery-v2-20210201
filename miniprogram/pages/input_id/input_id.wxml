@@ -1,0 +1,32 @@
+<view class='title_view'>
+  <view class='nav' style='height: {{status + navHeight}}px;'>
+    <view class='status' style='height: {{status}}px;{{containerStyle}};'></view>
+    <view class='navbar' style='height:{{navHeight}}px;{{containerStyle}};'>
+      <view class='back-icon' bindtap='back'>
+        <image src='/images/back@3x.png'></image>
+      </view>
+
+
+
+      <view class='nav-title' style=' width:70%;display: flex;justify-content: flex-start; align-items: center;'>
+        <text style='{{textStyle}}'>抽奖详情</text>
+      </view>
+
+    </view>
+  </view>
+</view>
+
+<view style='height: {{top_height}}px;'></view>
+
+<view class='id_input'> 需要被复制的内容 </view>
+<view class='input_view'>
+<input placeholder='可输入需要引流账号ID(最多12位)' class='input' maxlength='12' placeholder-style='font-size:15rpx;' bindinput='fuzhi' data-index='1' value='{{v1}}'></input>
+</view>
+
+
+<view class='id_input'> 需要被展示的账号名称 </view>
+<view class='input_view'>
+<input placeholder='可输入需要引流账号名(最多12位)' class='input' maxlength='12' placeholder-style='font-size:15rpx;'bindinput='fuzhi' data-index='2' value='{{v2}}'></input>
+</view>
+<view style='height:100rpx;'></view>
+ <view class='botn' bindtap='save'>保存</view>

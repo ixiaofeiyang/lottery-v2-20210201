@@ -1,0 +1,23 @@
+<!--pages/aspiration/aspiration.wxml-->
+<navBar title-text="意见反馈" background="white" back-icon="/images/back@3x.png" bindback="back" />
+
+<!-- 配置 自定义的title -->
+<view style='height: {{top_height}}px;'></view>
+
+<view style='height:20rpx;background:#f0f0f0;'></view>
+<view class="opinion_wrap">
+    <view class="wrap">
+        <form bindsubmit="formSubmit">
+            <view class="contant_wrap">
+                <view class="contant">
+                    <textarea name="opinion"  bindinput="content"  value="{{content}}" auto-height placeholder-class="placeholder" placeholder="为了带给您更好的体验,期待您的任何反馈,我们将会不断改进" />
+                </view>
+            </view>
+            <view class="phone">
+                <input  bindinput="contact"   name="contant" value="{{contact}}" placeholder-class="placeholder" placeholder="您的手机号或者邮箱,方便我们及时给您回复" />
+            </view>
+            <button open-type='feedback' bindtap='feedback' type='primary'  hover-class="none" loading="{{loading}}">提交</button>
+            <!-- <button open-type='feedback'>意见反馈</button> -->
+        </form>
+    </view>
+</view>

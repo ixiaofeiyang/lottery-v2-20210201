@@ -1,0 +1,30 @@
+<template name="nav">
+  <view class="nav_link" bindtap="{{fn}}">
+    <button class="defalut_btn {{current==0?'':'on_cor'}}">
+
+
+      <block wx:if="{{style==0}}">
+        <view class="plus_wp">
+
+          <image src="{{current==1?'/images/3.svg':'/images/3_no.svg'}}"></image>
+        </view>
+        <text class="txt txt_fb" style="color:{{current==1?'rgb(240, 0, 0)':'rgb(65, 64, 64);'}}">{{name}}</text>
+      </block>
+
+      <block wx:if="{{style==1}}">
+        <view class="plus_wp">
+          <image src="{{current==1?'/images/2.svg':'/images/2_no.svg'}}"></image>
+        </view>
+        <text class="txt txt_fb" style="color:{{current==1?'rgb(240, 0, 0)':'rgb(65, 64, 64);'}}">{{name}}</text>
+      </block>
+
+      <block wx:if="{{style==2}}">
+        <view class="plus_wp">
+          <image src="{{current==1?'/images/lottery_mine_checked@3x.png':'/images/lottery_mine_noraml@3x.png'}}"></image>
+        </view>
+        <text class="txt txt_fb" style="color:{{current==1?'rgb(240, 0, 0)':'rgb(65, 64, 64);'}}">{{name}}</text>
+      </block>
+
+    </button>
+  </view>
+</template>

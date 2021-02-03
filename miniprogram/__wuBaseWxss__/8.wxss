@@ -1,0 +1,213 @@
+@-webkit-keyframes selectCoverShow {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes selectCoverShow {
+    100% {
+        opacity: 1;
+    }
+}
+
+button:before {
+    display: none!important;
+}
+
+button:after {
+    display: none!important;
+}
+
+.layout-conponent .navigation-bar {
+    width: 100%;
+    display: flex;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 950;
+}
+
+.layout-conponent .navigation-bar .navigation-bar-main {
+    height: 44px;
+    padding-top: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.layout-conponent .navigation-bar .navigation-bar-main.iPhoneX {
+    padding-top: 44px;
+}
+
+.layout-conponent .navigation-bar .navigation-bar-main .navigation-bar-title {
+    font-size: 18px;
+    color: #000;
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    position: relative;
+}
+
+.layout-conponent .navigation-bar .navigation-bar-main .navigation-bar-title .navigation-bar-title-content {
+    display: flex;
+    justify-content: center;
+}
+
+.layout-conponent .navigation-bar .navigation-bar-main .navigation-bar-title .navigation-bar-title-content .filter-arrow {
+    width: 9px;
+    height: 6px;
+    padding: 16px 16px 16px 7px;
+    align-self: center;
+}
+
+.layout-conponent .navigation-bar .navigation-bar-main .navigation-bar-title .navigation-bar-title-content text {
+    align-self: center;
+}
+
+.layout-conponent .navigation-bar .navigation-bar-main .navigation-bar-title .navigate-selector-list {
+    position: absolute;
+    top: 44px;
+    left: 5%;
+    width: 90%;
+    box-shadow: 0 2px 5px -2px rgba(0,0,0,0.1);
+    border: 1rpx solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.layout-conponent .navigation-bar .navigation-bar-main .navigation-bar-title .navigate-selector-list .navigate-selector-list-item {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.layout-conponent .navigation-bar .navigation-bar-main .navigation-bar-title .navigate-selector-list .navigate-selector-list-item:last-child {
+    border-bottom: none;
+}
+
+.layout-conponent .navigation-bar .navigation-bar-main .navigation-bar-title .navigate-selector-list .navigate-selector-list-item.highlight {
+    background: #f1f1f1;
+}
+
+.layout-conponent .navigation-bar .navigation-bar-main .navigation-bar-title .navigate-selector-list .navigate-selector-list-item.selected image {
+    display: block;
+}
+
+.layout-conponent .navigation-bar .navigation-bar-main .navigation-bar-title .navigate-selector-list .navigate-selector-list-item text {
+    align-self: center;
+    font-size: 17px;
+    letter-spacing: .3px;
+    color: rgba(0,0,0,0.8);
+    margin-left: 20px;
+    flex-grow: 1;
+}
+
+.layout-conponent .navigation-bar .navigation-bar-main .navigation-bar-title .navigate-selector-list .navigate-selector-list-item image {
+    align-self: center;
+    width: 14px;
+    height: 10px;
+    flex-grow: 0;
+    margin-right: 20px;
+    display: none;
+}
+
+.layout-conponent .navigation-bar .navigation-bar-main .navigation-bar-back {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    padding: 16px;
+    bottom: -2px;
+    z-index: 951;
+}
+
+.layout-conponent .navigation-bar .navigation-bar-main .navigation-bar-cancel {
+    height: 20px;
+    position: absolute;
+    padding: 16px;
+    bottom: -4px;
+    z-index: 951;
+    font-size: 15px;
+}
+
+.layout-conponent .navigation-bar .navigation-bar-main .navigation-bar-cancel.highlight {
+    opacity: .5;
+}
+
+.layout-conponent .navigation-bar .navigation-bar-main .navigate-selector {
+    position: absolute;
+    left: 16px;
+    bottom: 7px;
+}
+
+.layout-conponent .navigation-bar .navigation-bar-main .navigate-selector .navigate-selector-button {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    border: solid 1rpx rgba(0,0,0,0.2);
+}
+
+.layout-conponent .navigation-bar .navigation-bar-main .navigate-selector .navigate-selector-button.highlight {
+    background-color: #e8e8e8;
+}
+
+.layout-conponent .navigation-bar .navigation-bar-main .navigate-selector .navigate-selector-button image {
+    width: 6px;
+    height: 4px;
+    margin-left: 7px;
+    margin-right: 12px;
+    align-self: center;
+}
+
+.layout-conponent .navigation-bar .navigation-bar-main .navigate-selector .navigate-selector-button text {
+    margin-left: 12px;
+    font-size: 12px;
+    letter-spacing: .3px;
+    color: rgba(0,0,0,0.7);
+    align-self: center;
+}
+
+.layout-conponent .layout-main {
+    padding-top: 64px;
+}
+
+.layout-conponent .layout-main::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+
+.layout-conponent .layout-main.iPhoneX {
+    padding-top: 88px;
+}
+
+.layout-conponent .layout-main.fix {
+    padding-top: 0;
+}
+
+.layout-conponent .select-toggle-cover {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    background: rgba(0,0,0,0.25);
+    opacity: 0;
+    animation: .25s linear selectCoverShow forwards;
+}
+
+.layout-conponent .get-user-info-button {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 940;
+    top: 0;
+    left: 0;
+}

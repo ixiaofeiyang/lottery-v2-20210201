@@ -1,0 +1,27 @@
+.bottom {
+  position: fixed;
+  bottom: 0;
+  background: white;
+  height: 120rpx;
+  width: 100%;
+    display: flex;
+  flex-direction: row;
+}
+
+
+.icon_img {
+  width: 33.3%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 24rpx;
+  color: #757575;
+  font-weight: 700;
+}
+
+.icon_ {
+  height: 45rpx;
+  width: 45rpx;
+}

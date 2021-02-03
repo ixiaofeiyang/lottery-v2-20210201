@@ -1,0 +1,30 @@
+/* miniprogram/pages/auth/auth.wxss */
+.page{
+    padding-top: 150rpx;
+}
+.header{
+    margin-top: 50rpx;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+ .btn-area{
+    margin-top: 50rpx;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.btn-area button{
+    background-color: #caaf92;
+    width: 650rpx;
+    border-radius: 40px;
+    line-height: 2;
+    color: #fff;
+}

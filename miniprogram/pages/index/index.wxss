@@ -1,0 +1,307 @@
+@import "/__wuBaseWxss__/0.wxss";
+@import "/__wuBaseWxss__/8.wxss";
+@import "/__wuBaseWxss__/5.wxss";
+@import "/__wuBaseWxss__/12.wxss";
+@import "/__wuBaseWxss__/6.wxss";
+
+page {
+  background-color: hsl(0, 0%, 94%);
+  width: 100%;
+  height: 100%;
+  font-family: "PingFangSC-Regular";
+}
+
+.Everday_Lottery_view {
+  height: fit-content;
+  width: 90%;
+  background: white;
+  margin: auto;
+  margin-bottom: 20rpx;
+  border-radius: 15rpx;
+  border: 1rpx solid rgba(128, 128, 128, 0.459);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.img_everyday_view {
+  height: 280rpx;
+  width: 100%;
+}
+
+.Self_Lottery_view {
+  height: 228rpx;
+  width: 90%;
+  background: white;
+  margin: auto;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 5rpx;
+  border: 1rpx solid rgba(128, 128, 128, 0.459);
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  box-shadow:0px 0 0px rgba(255, 0, 0, 0), /*左边阴影*/
+            0px 0 0px rgba(255, 255, 0, 0), /*右边阴影*/
+            0 0px 0px rgba(0, 0, 255, 0), /*顶部阴影*/
+            0 2px 1px rgba(0, 0, 0, 0.137); /*底边阴影*/
+}
+
+
+.Self_Lottery_view_down{
+    height: 228rpx;
+  width: 90%;
+  background: white;
+  margin: auto;
+  margin-top: -0.5rpx;
+  margin-bottom: 0rpx;
+  border-radius: 2rpx;
+  border: 0.5rpx solid rgba(128, 128, 128, 0.459);
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+
+.img_heart_view {
+  width: 37rpx;
+  height: 37rpx;
+  margin-top: 8rpx;
+}
+
+.heart_view {
+  display: flex;
+  height: 100rpx;
+  width: 86%;
+  flex-direction: row;
+  position: relative;
+  margin: auto;
+  align-items: center;
+}
+
+.heart_view_1_text_1 {
+  margin-left: 15rpx;
+  font-weight: 600;
+}
+
+.heart_view_1_text_2 {
+  margin-left: 15rpx;
+  font-weight: 600;
+}
+
+.everyday_view {
+  display: flex;
+  height: 95rpx;
+  width: 90%;
+  flex-direction: row;
+  position: relative;
+  margin: auto;
+}
+
+.everyday_view_1 {
+  font-size: 40rpx;
+  color: rgb(240, 0, 0);
+  margin-left: 17rpx;
+  font-weight: 600;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.everyday_view_2 {
+  width: 60%;
+  font-size: 24rpx;
+  color: rgb(65, 64, 64);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 17rpx;
+}
+
+.heart_view_1 {
+  width: 50%;
+  font-size: 30rpx;
+  color: rgb(65, 64, 64);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.heart_view_2 {
+  width: 50%;
+  font-size: 30rpx;
+  color: rgb(65, 64, 64);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.separator {
+  height: 1.5rpx;
+  width: 87%;
+  background: #dfdfdf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.Everday_Lottery_text {
+  height: fit-content;
+  width: 90%;
+  margin: auto;
+  /* background: blue; */
+}
+
+.Everday_Lottery_text_1 {
+  height: fit-content;
+  width: 100%;
+  /* background: rgb(71, 63, 78); */
+  color: rgb(214, 37, 37);
+  font-size: 30rpx;
+}
+
+.Everday_Lottery_text_2 {
+  height: fit-content;
+  width: 100%;
+  /* background: rgb(71, 63, 78); *//* color: red; */
+  font-size: 30rpx;
+  margin-top: 10rpx;
+}
+
+.Everday_Lottery_text_3 {
+  height: fit-content;
+  width: 100%;
+  /* background: rgb(71, 63, 78); */
+  color: rgb(66, 66, 66);
+  font-size: 20rpx;
+  margin-top: 10rpx;
+}
+
+.Everday_Lottery_text_4 {
+  height: 20rpx;
+  width: 100%;
+  font-size: 20rpx;
+}
+
+.Self_Lottery_text1 {
+  font-size: 40rpx;
+  color: rgb(240, 0, 0);
+  font-weight: 600;
+  align-items:flex-end;
+  justify-content: flex-start;
+  display: flex;
+  height: 95rpx;
+  width: 100%;
+  position: relative;
+  margin: auto;
+  margin-left: 50rpx;
+}
+
+.Self_Lottery_view_img {
+  width: 176rpx;
+  height: 176rpx;
+  margin-left: 25rpx;
+  margin-top: 25rpx;
+  margin-bottom: 25prx;
+  margin-right: 25rpx;
+  border-top-right-radius:15rpx;
+  border-bottom-right-radius:15rpx;
+}
+
+.Self_Lottery_view_text_1 {
+  font-size: 30rpx;
+  color: black;
+  display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  width:400rpx;
+}
+
+.Self_Lottery_view_text_2 {
+  font-size: 25rpx;
+  color: rgba(0, 0, 0, 0.466);
+  margin-top: 10rpx;
+}
+
+.Self_Lottery_view_text_3 {
+  font-size: 23rpx;
+  color: rgba(124, 50, 50, 0.87);
+  margin-top: 15rpx;
+  border: 2rpx outset rgba(124, 50, 50, 0.87);
+  padding: 5rpx 10rpx 5rpx 10rpx;
+  width: fit-content;
+  max-width: 250rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.Self_Lottery_view_text_view {
+  /* margin-top: 20rpx;
+  margin-bottom: 20rpx; */
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Self_Lottery_view_text_3_view {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.Self_Lottery_view_text_4 {
+  font-size: 23rpx;
+  color: rgb(0, 0, 0);
+  margin-top: 15rpx;
+  border: 2rpx outset rgba(0, 0, 0, 0.836);
+  padding: 5rpx 10rpx 5rpx 10rpx;
+  margin-left: 15rpx;
+}
+
+.Self_Lottery_view_look_All{
+  height: 80rpx;
+  width: 90%;
+  background: white;
+  margin: auto;
+  margin-top: -0.5rpx;
+  margin-bottom: 0rpx;
+  border-radius: 2rpx;
+  border: 0.5rpx solid rgba(128, 128, 128, 0.459);
+  display: flex;
+  font-size: 28rpx;
+  font-weight: 560;
+  position: relative;
+  color: rgba(4, 75, 168, 0.993);
+  align-items: center;
+  justify-content: center;
+
+}
+
+.contact_worker{
+   height: 180rpx;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  font-size: 28rpx;
+  font-weight: 560;
+  position: relative;
+  color: rgba(0, 0, 0, 0.993);
+  align-items: center;
+  justify-content: center;
+}
+
+
+button{
+  background-color: transparent;
+}
+button::after {
+  border: 0;
+}  

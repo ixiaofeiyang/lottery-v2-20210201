@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="387" height="4" viewBox="0 0 387 4">
+  <g id="linear" transform="translate(-14.5 -659)">
+    <line id="直线_9" data-name="直线 9" x2="177" transform="translate(14.5 661.5)" fill="none" stroke="#d8d8d8" stroke-width="1"/>
+    <line id="直线_10" data-name="直线 10" x2="180" transform="translate(221.5 661.5)" fill="none" stroke="#d8d8d8" stroke-width="1"/>
+    <g id="椭圆_3" data-name="椭圆 3" transform="translate(204.5 659)" fill="#d8d8d8" stroke="#d8d8d8" stroke-width="1">
+      <circle cx="2" cy="2" r="2" stroke="none"/>
+      <circle cx="2" cy="2" r="1.5" fill="none"/>
+    </g>
+  </g>
+</svg>

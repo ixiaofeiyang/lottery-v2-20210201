@@ -1,0 +1,217 @@
+.user_info {
+  height: 150rpx;
+  width: 100%;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 0.5rpx solid #e2e2e2;
+}
+
+.user_info_img_view {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user_info_img {
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 100%;
+  /* background: rgb(61, 61, 3); */
+}
+
+.user_info_name_view {
+  width: 35%;
+  height: 100%;
+  /* background: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 27rpx;
+  /* border: 0.5rpx solid rgba(228, 228, 228, 0.349); */
+  margin-left: -10rpx;
+}
+
+.user_info_money_view {
+  width: 45%;
+  height: 100%;
+  /* background: red; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  margin-right: 20rpx;
+}
+
+.user_info_money_text {
+  position: relative;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 27rpx;
+  color: #ba7d3c;
+  font-weight: 700;
+}
+
+.user_info_money_img {
+  position: relative;
+  width: 20rpx;
+  height: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.separator1 {
+  height: 25rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background: #f0f0f0;
+}
+
+.lottery {
+  height: 180rpx;
+  width: 100%;
+  background: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.lottery_info {
+  height: 100%;
+  width: 33%;
+  /* background: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.line {
+  height: 100%;
+  width: 0.5%;
+  background: #f0f0f0;
+}
+
+.lottery_info_number {
+  font-size: 40rpx;
+  font-weight: 700;
+}
+
+.lottery_info_disc {
+  font-size: 27rpx;
+  font-weight: 500;
+  color: rgb(99, 99, 99);
+}
+
+.column_view_1 {
+  height: fit-content;
+  width: 100%;
+  background: white;
+}
+
+.column {
+  height: 90rpx;
+  widows: 95%;
+  margin: auto;
+  margin-top: 0rpx;
+  margin-bottom: 0rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.column_icon_1 {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.column_text_1 {
+  width: 55%;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 30rpx;
+}
+
+.column_text_2 {
+  width: 27%;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 27rpx;
+  color: #727272;
+}
+
+.column_icon_2 {
+  width: 8%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.column_icon_1_img {
+  position: relative;
+  width: 40rpx;
+  height: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line1 {
+  height: 0.5rpx;
+  width: 730rpx;
+  background: #f0f0f0;
+  /* background: #ff0000; */
+
+  margin: auto;
+  margin-left:20rpx; 
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+.public{
+  height: 300rpx;
+  width: 100%;
+  font-size: 27rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.public_text1{
+  color: rgb(80, 80, 80);
+  font-weight: 700;
+    font-size:37rpx;
+    margin-bottom: 15rpx;
+}
+
+.public_text2{
+  color: gray;
+
+}
+
+.adopt_bottom{
+  height: 120rpx;
+  background: #f0f0f0;
+  width: 100%;
+}
+
+.public_toBottom
+{
+  position: fixed;
+  bottom: 200rpx;
+  right: 189.5rpx;
+}

@@ -1,0 +1,19 @@
+<view class="bottom ">
+
+
+    <view class='icon_img' bindtap='one_select'>
+      <image src="{{one_select!=1?'/images/3_no.svg':'/images/3.svg'}}" class='icon_'></image>
+      <view style="color:{{one_select!=1?'#757575':'#E04739'}}">首页</view>
+    </view>
+
+    <view class='icon_img' bindtap='two_select'>
+      <image src="{{two_select!=1?'/images/2_no.svg':'/images/2.svg'}}" class='icon_'></image>
+      <view style="color:{{two_select!=1?'#757575':'#E04739'}}">发起抽奖</view>
+    </view>
+
+    <view class='icon_img' bindtap='three_select'>
+      <image src="{{three_select!=1?'/images/lottery_mine_noraml@3x.png':'/images/lottery_mine_checked@3x.png'}}" class='icon_'></image>
+      <view style="color:{{three_select!=1?'#757575':'#E04739'}}">我的</view>
+    </view>
+
+</view>

@@ -1,0 +1,137 @@
+page {
+  background-color: hsl(0, 0%, 94%);
+  width: 100%;
+  height: 100%;
+  font-family: "PingFangSC-Regular";
+}
+
+.Everday_Lottery_view {
+  height: fit-content;
+  width: 100%;
+  background: white;
+  margin: auto;
+  margin-bottom: 20rpx;
+  border-radius: 15rpx;
+  border: 1rpx solid rgba(128, 128, 128, 0.459);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.img_everyday_view {
+  height: 360rpx;
+  width: 100%;
+}
+
+.Self_Lottery_view {
+  height: 228rpx;
+  width: 90%;
+  background: white;
+  margin: auto;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 5rpx;
+  border: 1rpx solid rgba(128, 128, 128, 0.459);
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  box-shadow: 0px 0 0px rgba(255, 0, 0, 0),
+                /*左边阴影*/ 0px 0 0px rgba(255, 255, 0, 0),
+                /*右边阴影*/ 0 0px 0px rgba(0, 0, 255, 0),
+                /*顶部阴影*/ 0 2px 1px rgba(0, 0, 0, 0.137); /*底边阴影*/
+}
+
+.Self_Lottery_view_down {
+  height: 228rpx;
+  width: 90%;
+  background: white;
+  margin: auto;
+  margin-top: -0.5rpx;
+  margin-bottom: 0rpx;
+  border-radius: 2rpx;
+  border: 0.5rpx solid rgba(128, 128, 128, 0.459);
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.img_heart_view {
+  width: 37rpx;
+  height: 37rpx;
+  margin-top: 8rpx;
+}
+
+
+
+.everyday_view {
+  display: flex;
+  height: 20rpx;
+  width: 90%;
+  flex-direction: row;
+  position: relative;
+  margin: auto;
+}
+
+.everyday_view_1 {
+  font-size: 40rpx;
+  color: rgb(240, 0, 0);
+  margin-left: 17rpx;
+  font-weight: 600;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.everyday_view_2 {
+  width: 60%;
+  font-size: 24rpx;
+  color: rgb(65, 64, 64);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 17rpx;
+}
+
+
+
+
+
+.Everday_Lottery_text {
+  min-height: 150rpx;
+  width: 95%;
+  margin: auto;
+ 
+}
+
+.Everday_Lottery_text_2 {
+  width: 100%;
+  font-size: 40rpx;
+  margin-top: 8rpx;
+  font-weight: 700;
+  font-family: cursive;
+}
+
+.Everday_Lottery_text_3 {
+  
+  width: 100%;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 25rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  flex-direction: row;
+  font-family: cursive;
+}
+
+.Everday_Lottery_text_4 {
+  position: absolute;
+  color: red;
+  height: 20rpx;
+  width: 100%;
+  font-size: 25rpx;
+  font-weight: 500;
+  left: 600rpx;
+}
+
+

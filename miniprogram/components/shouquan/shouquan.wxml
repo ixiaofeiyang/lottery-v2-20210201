@@ -1,0 +1,9 @@
+<!--component/shouquan/shouquan.wxml-->
+<view class='mask' wx:if="{{hq}}" catchtouchmove="preventTouchMove">
+    <view class='m' style='overflow:hidden'>
+    <image src='/images/sq.jpg' style='width:100%;height:100%'></image>
+    </view>
+    <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo" class="s">
+ 确定授权
+</button>
+</view>

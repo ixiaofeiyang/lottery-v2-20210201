@@ -1,0 +1,54 @@
+page {
+  background-color: #f0f0f0;
+  width: 100%;
+  height: 100%;
+  font-family: "PingFangSC-Regular";
+}
+
+.remainder {
+  height: 350rpx;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  font-size: 32rpx;
+}
+
+.get_money_record {
+  width: 90%;
+  height: 80rpx;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30rpx;
+  font-weight: 560;
+  color: rgb(37, 37, 37);
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.get_money {
+  width: 90%;
+  height: 80rpx;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30rpx;
+  font-weight: 560;
+  color: white;
+  background: rgb(218, 50, 50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 1px 1px #e9e9e9;
+  border-radius: 3rpx;
+  border: 0.5rpx solid #d3d3d3;
+}
+
+.bottom_contact{
+  position: absolute;
+  bottom: 50rpx;
+  height: fit-content;
+}

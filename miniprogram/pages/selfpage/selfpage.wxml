@@ -1,0 +1,33 @@
+<!--pages/selfpage/selfpage.wxml-->
+<navBar title-text="个人主页" background="white" back-icon="/images/back@3x.png" bindback="back" />
+
+<!-- 配置 自定义的title -->
+<!-- <view style='height: {{88}}px;'></view> -->
+<view style='height: {{top_height}}px;'></view>
+
+<view class='top'>
+  <view class='top_text1'>li.kun</view>
+  <view class='top_text2'>累计发起抽奖 1 次</view>
+</view>
+
+<view style='width:100%;height:0.8rpx;background:lightgray;'></view>
+<view class='lottery_view'>
+  <view class='lottery_view_1'>推荐抽奖</view>
+  <view class='lottery_view_2'>设置</view>
+  <view style='margin-left:-10rpx;'>
+    <image src='/images/arrow@3x.png' style='height: 15px;width: 25px;'></image>
+  </view>
+</view>
+
+
+<view style='background:white;height:480rpx;width:100%;'>
+  <view class='show_img_view'>
+    <image src='/images/default-prize@3x.jpg' style='height:300rpx;width:100%;'></image>
+    <view class='show_img_view_text'>奖品：华为P30 x1</view>
+  </view>
+</view>
+
+
+<view style='background:white;height:120rpx;width:100%; position:absolute;bottom: 0rpx;'>
+  <view class='share'>分享页面</view>
+</view>

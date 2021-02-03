@@ -1,0 +1,26 @@
+.date-time-picker picker-view {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 120px;
+}
+
+.date-time-picker picker-view picker-view-column {
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.date-time-picker picker-view picker-view-column view {
+    line-height: 37px;
+}
+
+.date-time-picker picker-view .stage {
+    flex-basis: 50px;
+    flex-grow: 0;
+    text-align: left;
+}
+
+.date-time-picker picker-view .date {
+    flex-grow: 2;
+    flex-shrink: 0;
+}

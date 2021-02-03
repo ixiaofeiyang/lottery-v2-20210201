@@ -1,0 +1,75 @@
+<navBar title-text="抽奖详情" background="white" back-icon="/images/back@3x.png" bindback="back" />
+
+<view style='height: {{status + navHeight}}px;'></view>
+
+
+<view class="awardlist">中奖者名单</view>
+<view class="Firstprize" wx:if="{{number>=1}}">
+  <view class="top"> 奖品： 一等奖×5</view>
+  <view class="middle">
+    <block wx:for="{{user1}}">
+      <view class="showlist">
+        <image src="{{pic}}" class="pic"></image>
+        <view>li.kun</view>
+      </view>
+
+    </block>
+
+
+
+
+
+  </view>
+
+
+
+
+</view>
+
+
+<view class="Firstprize" wx:if="{{number>=2}}">
+  <view class="top"> 奖品： 一等奖×5</view>
+  <view class="middle">
+    <block wx:for="{{user2}}">
+      <view class="showlist">
+        <image src="{{pic}}" class="pic"></image>
+        <view>li.kun</view>
+      </view>
+
+
+    </block>
+
+
+
+
+
+  </view>
+
+
+
+
+</view>
+
+
+<view class="Firstprize" wx:if="{{number>=3}}">
+  <view class="top"> 奖品： 一等奖×5</view>
+  <view class="middle">
+    <block wx:for="{{user3}}">
+      <view class="showlist">
+        <image src="{{pic}}" class="pic"></image>
+        <view>li.kun</view>
+      </view>
+
+
+    </block>
+
+
+
+
+
+  </view>
+
+
+
+
+</view>

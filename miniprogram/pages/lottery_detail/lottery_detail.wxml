@@ -1,0 +1,136 @@
+<!--pages/lottery_detail/lottery_detail.wxml-->
+
+  <navBar title-text="抽奖详情" back-icon="/images/back@3x.png" background="white" bindback="back" />
+
+
+  <!-- 配置 自定义的title -->
+  <view style='height: {{height}}px;'></view>
+
+
+
+
+<!-- <view style='height: {{88}}px;'></view> -->
+
+<scroll-view scroll-y style="height: 700px;" bindscrolltolower="lower">
+
+  <swiper style='height:350rpx;width:100%;' indicator-dots='true' autoplay='true'>
+    <block wx:for="{{pic}}">
+      <swiper-item>
+        <image src="{{item}}"  mode='aspectFill' class='lottery_detail_img' style='height:100%;width:100%;' />
+      </swiper-item>
+    </block>
+  </swiper>
+<!-- 
+  <view>
+    <image src='/images/phone-690091_640.jpg'></image>
+  </view> -->
+
+
+
+  <view class='Self_Lottery_view_text_view'>
+    <!-- 最多四行 -->
+    <view class='Self_Lottery_view_text_view_1' wx:if="{{data_lottery.number>=1}}"> {{data_lottery.number>1?'一等奖':'奖品'}}：{{data_lottery.name1}} ✕ {{data_lottery.num1}}</view>
+    <view class='Self_Lottery_view_text_view_1' wx:if="{{data_lottery.number>=2}}"> 二等奖：{{data_lottery.name2}} ✕ {{data_lottery.num2}}</view>
+    <view class='Self_Lottery_view_text_view_1' wx:if="{{data_lottery.number>=3}}"> 三等奖：{{data_lottery.name3}} ✕ {{data_lottery.num3}}</view>
+
+    <view class='Self_Lottery_view_text_view_2' wx:if="{{data_lottery.way==1}}">{{data_lottery.time}} 自动开奖</view>
+    <view class='Self_Lottery_view_text_view_2' wx:if="{{data_lottery.way==2}}">满{{data_lottery.num}}人 自动开奖</view>
+    <view class='Self_Lottery_view_text_view_2' wx:if="{{data_lottery.way==3}}">发起人 手动开奖</view>
+    <!-- <view class='Self_Lottery_view_text_view_3'>
+      <view class='Self_Lottery_view_text_view_3_1'>参与条件:</view>
+      <view class='Self_Lottery_view_text_view_3_2'>参加抽奖次数大于100</view>
+    </view> -->
+  </view>
+
+  <view class='separator'></view>
+
+
+  <view class='week_view' bindtap='copy_count'>
+    <view class='week_view_1'>
+      <image src='/images/tuan.png' mode='aspectFill' class='week_view_img'></image>
+    </view>
+    <view class='week_view_text1'>{{data_lottery.wechat_name}}({{data_lottery.wechat_inform}})</view>
+    <view class='week_view_text2' >去添加</view>
+  </view>
+
+  <view class='grey_line'></view>
+  <view class='Everday_Lottery_view'>
+    <view>
+      <image class=' toast_view_1_img' src='/images/yinghao.svg' mode='aspectFill'></image>
+    </view>
+    <view class='Everday_Lottery_text'>
+      <view class='Everday_Lottery_text_3'><text>{{data_lottery.information}}</text></view>
+    </view>
+  </view>
+  <view class='grey_line'></view>
+
+  <view class='text_much'>
+    <text class='text_much_text_1'>{{text}}</text>
+  </view>
+
+  <!-- 引流 -->
+  <!-- <view class='text_much_color1'>
+    <view class='text_much_color_view'>
+      <image src='/images/tuan.png' mode='aspectFill' class='week_view_img'></image>
+    </view>
+    <view class='text_much_color_text_1_1'>抽奖助手</view>
+    <view class='text_much_color_text_2_1'>去体验 ></view>
+  </view> -->
+
+  <!-- <view class='text_much_color1'>
+    <view class='text_much_color_view'>
+      <image src='/images/tuan.png' mode='aspectFill' class='week_view_img'></image>
+    </view>
+    <view class='text_much_color_text_1_1'>周末捡漏福利官</view>
+    <view class='text_much_color_text_2_1'>去体验 ></view>
+  </view> -->
+  <!-- 引流 -->
+  
+  <view class='grey_line'></view>
+
+<ad unit-id="adunit-7e5bedc5c920f1c4" ad-type="grid" grid-opacity="0.8" grid-count="5" ad-theme="white"></ad>
+
+  <view  class='join'>
+    <view class='join_img_view' bindtap='join'>
+      <image src="{{could_join?'/images/join.svg':'/images/join_wait.svg'}}" class='join_img'></image>
+    </view>
+    <view class='join_text_view' bindtap='whole'>已有{{cd}}人参与，查看全部 ></view>
+
+    <view class='join_pic_view'>
+      
+      <view class='image_view' wx:for="{{canyu}}">
+        <image src="{{item}}" style='height:50rpx;width:50rpx;'></image>
+      </view>
+
+    </view>
+
+  </view>
+
+
+
+
+
+  <view class='grey_block'>
+    <image src='/images/linear.svg' class='linear' mode='aspectFill'></image>
+  </view>
+
+</scroll-view>
+
+
+<view class="bottom " animation="{{show_time}}">
+
+
+  <button class='black_view' open-type='share' wx:if="{{source=='home'}}">
+    <view class='black_text1'>分享</view>
+  </button>
+
+  <button class='black_view' wx:if="{{source=='welcome'}}" bindtap="toHome">
+    <view class='black_text1'>返回首页</view>
+  </button>
+
+  <view class='black_text2' bindtap='go_to_more'>更多奖品在等你</view>
+
+
+</view>
+
+

@@ -1,0 +1,94 @@
+<view class='title_view'>
+  <view class='nav' style='height: {{44 + 44}}px;'>
+    <view class='status' style='height: {{44}}px;{{containerStyle}}'></view>
+    <view class='navbar' style='height:{{44}}px;{{containerStyle}}; '>
+      <view class='back-icon' bindtap='back'>
+        <image src='/images/icn_back@3x.png'></image>
+      </view>
+
+
+
+      <view class='nav-title' style=' width:70%;display: flex;justify-content: flex-start; align-items: center;'>
+        <text style='{{textStyle}}'>常见问题</text>
+      </view>
+
+    </view>
+  </view>
+</view>
+
+<!-- 配置 自定义的title -->
+<view style='height: {{88}}px;'></view>
+<!-- <view style='height: {{top_height}}px;'></view> -->
+
+
+
+<scroll-view>
+
+  <view class='finished'>发起抽奖</view>
+
+  <view wx:for="{{ask_answer}}">
+
+    <view class='lottery_list' bindtap='show_answer' data-index="{{index}}">
+      <view class='img_list'>
+        <image src='/images/question.svg' style='height:40rpx;width:36rpx;'> </image>
+      </view>
+      <view class='lottery_list_2'>
+        <text class='lottery_list_2_text'>{{item.ask}}</text>
+      </view>
+      <view class='lottery_list_4'>
+        <image  src="{{item.look?'/images/arrow@3x_2.png':'/images/arrow@3x_1.png'}}"  style='height:60rpx;width:36rpx;'></image>
+      </view>
+    </view>
+    <view class='seperator4'></view>
+
+    <view class='lottery_list_answer' wx:if="{{item.look}}">
+      <view class='img_list_answer'>
+        <image src='/images/answer.svg' style='height:40rpx;width:36rpx;'> </image>
+      </view>
+      <view class='lottery_list_2_answer'>
+        <text class='lottery_list_2_text_answer'>{{item.answer}}</text>
+      </view>
+    </view>
+    <view class='seperator4'></view>
+
+
+  </view>
+
+
+<!-- 
+  <view class='finished'>参与抽奖</view>
+
+  <view wx:for="{{ask_answer}}">
+
+    <view class='lottery_list' bindtap='show_answer' data-index="{{index}}">
+      <view class='img_list'>
+        <image src='/images/icn-warning@3x.png' style='height:40rpx;width:36rpx;'> </image>
+      </view>
+      <view class='lottery_list_2'>
+        <text class='lottery_list_2_text'>{{item.ask}}</text>
+      </view>
+      <view class='lottery_list_4'>
+        <image  src="{{item.look?'/images/arrow@3x_2.png':'/images/arrow@3x_1.png'}}"  style='height:60rpx;width:36rpx;'></image>
+      </view>
+    </view>
+    <view class='seperator4'></view>
+
+    <view class='lottery_list_answer' wx:if="{{item.look}}">
+      <view class='img_list_answer'>
+        <image src='/images/icn-success@3x.png' style='height:40rpx;width:36rpx;'> </image>
+      </view>
+      <view class='lottery_list_2_answer'>
+        <text class='lottery_list_2_text_answer'>{{item.answer}}</text>
+      </view>
+    </view>
+    <view class='seperator4'></view>
+
+
+  </view> -->
+
+
+  <view  bindtap='go_to_advice' style='height:80rpx;width:100%;font-size:28rpx;color:rgb(0, 150, 236);padding-top:50rpx;display: flex;justify-content:center'>意见反馈 ➤</view>
+
+
+
+</scroll-view>

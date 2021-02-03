@@ -1,0 +1,50 @@
+/* pages/look_lucky_user/look_lucky_user.wxss */
+
+page {
+  background: #f0f0f0;
+}
+
+.text_view1 {
+  background: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  font-size: 32rpx;
+}
+
+.view_1 {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.view_2 {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.view_3 {
+  width:20%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 20rpx;
+}
+
+.user_view {
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background: white;
+}

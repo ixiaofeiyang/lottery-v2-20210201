@@ -1,0 +1,74 @@
+rich-text {
+    user-select: text;
+    -webkit-touch-callout: text;
+}
+
+.game-rich-text {
+    background: #fff;
+    padding: 33px 15px;
+    overflow: hidden;
+}
+
+.game-rich-text .game-rich-text-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.game-rich-text .game-rich-text-label .split-line {
+    width: 80px;
+    height: 1px;
+    background: rgba(0,0,0,0.1);
+    flex: 0 0 auto;
+}
+
+.game-rich-text .game-rich-text-label .label-value {
+    font-size: 17px;
+    font-weight: lighter;
+    color: rgba(0,0,0,0.5);
+    margin: 0 20px;
+    flex: 0 0 auto;
+}
+
+.game-rich-text .copy-info {
+    border: solid 3px #e2dfda;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 26px;
+}
+
+.game-rich-text .copy-info .copy-info-title {
+    margin: 20px 20px 0;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: #716249;
+}
+
+.game-rich-text .copy-info .copy-info-content {
+    margin: 18px 20px 0;
+    padding: 18px 22px;
+    background-color: #f8f7f6;
+    line-height: 1.67em;
+    font-size: 15px;
+    color: rgba(113,98,73,0.7);
+    word-break: break-all;
+}
+
+.game-rich-text .copy-info .copy-button {
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #716249;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    margin: 20px auto;
+    opacity: .9;
+}
+
+.game-rich-text .copy-info .copy-button.highlight {
+    background-color: #4f4433;
+}

@@ -1,0 +1,14 @@
+<!--miniprogram/pages/tip/tip.wxml-->
+  <navBar title-text="温馨提示" back-icon="/images/back@3x.png" background="white" bindback="back" />
+
+
+  <!-- 配置 自定义的title -->
+  <view style='height: {{height}}px;'></view>
+
+<view class="tip">
+<text>由于小程序主体为个人不能对外发布抽奖活动，如有需要请联系客服</text>
+</view>
+<view class="button" bindtap="go">
+返回
+</view>
+

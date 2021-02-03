@@ -1,0 +1,145 @@
+<!--pages/award/award.wxml-->
+<navBar title-text="抽奖活动" background="white" back-icon="/images/back@3x.png" bindback="back" />
+
+
+<view class='contaner' style='top:{{status + navHeight}}px'>
+  <view style='width:100%;height:80rpx;color:rgb(100,100,100);background:rgba(240,240,240,1);font-size:24rpx;line-height:80rpx;padding-left:25rpx;'>设置奖项</view>
+
+  <view wx:if="{{s>=1}}">
+    <view class='pic'>
+      <image src="{{image1}}" mode="aspectFill" style='width:100%;height:100%' />
+      <view class='addIcon' bindtap="choosepic1" style='background:white;'>
+        上传奖品照片
+      </view>
+    </view>
+
+    <view style='width:100%;height:100rpx;display:flex;flex-direction:row'>
+      <text class='input11' style='margin-left:25rpx;'>{{np}}</text>
+      <input class="input1" bindinput='jpname' placeholder='请输入{{np}}' data-index='1' placeholder-class='c'></input>
+    </view>
+    <view style='width:725rpx;height:1px;background:rgba(80,80,80,0.3);margin-left:25rpx'></view>
+    <view style='width:100%;height:100rpx;display:flex;flex-direction:row'>
+      <text class='input11' style='margin-right:200rpx;margin-left:25rpx;'>奖品份数</text>
+      <input class="input1" style='width:100rpx' bindinput='jpnum' data-index='1' placeholder-class='c' type='number' placeholder='份数'></input>
+      <text class='input11' style='width:100rpx'>份</text>
+    </view>
+  </view>
+
+  <view wx:if="{{s>=2}}">
+    <view style='width:100%;height:80rpx;color:rgb(100,100,100);background:rgba(240,240,240,1);font-size:24rpx;line-height:80rpx;padding-left:25rpx;'>设置奖项</view>
+    <view class='pic'>
+      <image src="{{image2}}" mode="aspectFill" style='width:100%;height:100%' />
+
+      <view class='addIcon' bindtap="choosepic2" style='background:white'>
+        上传奖品照片
+      </view>
+    </view>
+
+    <view style='width:100%;height:100rpx;display:flex;flex-direction:row'>
+      <icon type='cancel' size='25' style='position:absolute;margin-top:24rpx;margin-left:30rpx;' bindtap='cancel'></icon>
+      <text class='input11' style='margin-left:100rpx;width:400rpx;'>二等奖名称</text>
+      <input class="input1" bindinput='jpname' data-index='2' placeholder='请输入二等奖名称' placeholder-class='c'></input>
+    </view>
+    <view style='width:95%;height:1px;background:rgba(80,80,80,0.3);margin-left:5%'></view>
+    <view style='width:100%;height:100rpx;display:flex;flex-direction:row'>
+      <text class='input11' style='margin-right:200rpx;margin-left:100rpx;'>奖品份数</text>
+      <input class="input1" style='width:100rpx' data-index='2' bindinput='jpnum' placeholder-class='c' type='number' placeholder='份数'></input>
+      <text class='input11' style='width:100rpx'>份</text>
+    </view>
+  </view>
+
+  <view wx:if="{{s>=3}}">
+    <view style='width:100%;height:80rpx;color:rgb(100,100,100);background:rgba(240,240,240,1);font-size:24rpx;line-height:80rpx;padding-left:25rpx;'>设置奖项</view>
+    <view class='pic'>
+      <image src="{{image3}}" mode="aspectFill" style='width:100%;height:100%' />
+
+      <view class='addIcon' bindtap="choosepic3" style='background:white'>
+        上传奖品照片
+      </view>
+    </view>
+
+    <view style='width:100%;height:100rpx;display:flex;flex-direction:row'>
+      <icon type='cancel' size='25' style='position:absolute;margin-top:24rpx;margin-left:30rpx;' bindtap='cancel'></icon>
+      <text class='input11' style='margin-left:100rpx;width:400rpx;'>三等奖名称</text>
+      <input class="input1" bindinput='jpname' data-index='3' placeholder='请输入三等奖名称' placeholder-class='c'></input>
+    </view>
+    <view style='width:95%;height:1px;background:rgba(80,80,80,0.3);margin-left:5%'></view>
+    <view style='width:100%;height:100rpx;display:flex;flex-direction:row'>
+      <text class='input11' style='margin-right:200rpx;margin-left:100rpx;'>奖品份数</text>
+      <input class="input1" style='width:100rpx' data-index='3' bindinput='jpnum' placeholder-class='c' type='number' placeholder='份数'></input>
+      <text class='input11' style='width:100rpx'>份</text>
+    </view>
+  </view>
+
+  <view style='width:100%;height:70rpx;border-top:1px solid rgba(80,80,80,0.3);font-size:24rpx;text-align:center;line-height:70rpx;color:rgb(107,170,223)' bindtap='add'>+ 添加奖品</view>
+
+
+  <view style='width:100%;height:80rpx;display:flex;flex-direction:row;background:rgba(80,80,80,0.1)'>
+    <text class='input11' style='font-size:24rpx;color:rgb(100,100,100);line-height:80rpx;'>{{methord}}</text>
+    <view class='input1' bindtap='showModal' style='font-size:24rpx;color:rgb(107,170,223);line-height:80rpx;'>修改开奖条件 ➤</view>
+    <!--弹框-->
+    <view class='maskLayer' wx:if="{{showModalStatus}}">
+      <view bindtap='hideModal' style='width:100%;height:100%;position:absolute;top:0;left:0'></view>
+      <view class='main'>
+        <view class='close' bindtap='hideModal' data-index='1'>
+          按时间自动开奖
+        </view>
+        <view style='width:100%;height:1px;background:gray'></view>
+        <view class='close' bindtap='hideModal' data-index='2'>
+          按人数自动开奖
+        </view>
+        <view style='width:100%;height:1px;background:gray'></view>
+        <view class='close' bindtap='hideModal' data-index='3'>
+          手动开奖
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+
+
+
+  <view wx:if="{{index==2}}" style='width:100%;height:100rpx;display:flex;flex-direction:row;margin-top:-10rpx'>
+    <text class='input11'>开奖人数</text>
+    <input class="input1" bindinput='kpnum' placeholder-class='c' type='number' placeholder='人数'></input>
+  </view>
+
+  <!-- <view wx:if="{{index==3}}" style='width:100%;height:100rpx;display:flex;flex-direction:row;margin-top:-10rpx'>
+ <text class='input11'>即开即中</text>
+</view> -->
+
+  <view wx:if="{{index==3}}" style='width:100%;height:100rpx;display:flex;flex-direction:row;margin-top:-10rpx'>
+    <text class='input11' style='margin-right:300rpx'>最多抽奖人数</text>
+    <input class="input1" bindinput='kpnum' placeholder-class='c' style='width:100rpx' type='number' placeholder='人数'></input>
+    <text class='input11' style='width:100rpx'>人</text>
+  </view>
+  <view wx:if="{{index==1||index==3}}" style='width:100%;height:auto;display:flex;flex-direction:row'>
+    <text class='input11'>{{z}}</text>
+    <picker class='input1' style='margin-top:30rpx;font-size:28rpx;color:rgb(100,100,100)' mode="multiSelector" bindchange="bindStartMultiPickerChange" bindtap='pickerTap' bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">{{startDate}} ➤</picker>
+  </view>
+  <view style='width:100%;height:80rpx;display:flex;flex-direction:row;background:rgba(80,80,80,0.1)'>
+    <text class='input11' style='font-size:24rpx;color:rgb(100,100,100);line-height:80rpx;'>抽奖说明</text>
+    <view class='input1' bindtap='showModal' style='font-size:24rpx;color:rgb(100,100,100);line-height:80rpx;'>选填</view>
+  </view>
+  <view class="textArea" bindtap='jpms' style='color:{{color}};'><text>{{jpms}}</text></view>
+
+  <view style='width:100%;height:20rpx;display:flex;flex-direction:row;background:rgba(80,80,80,0.1)'>
+  </view>
+
+  <view  style='width:100%;height:auto;display:flex;flex-direction:row'>
+    <text class='input11'>发起人信息</text>
+    <text class='input1' style='margin-top:30rpx;font-size:28rpx;color:rgb(100,100,100)' bindchange="bindStartMultiPickerChange" bindtap='input_id'>请输入需要关注的账号ID ➤</text>
+  </view>
+
+  <view style='height:50rpx;background:#f0f0f0;'></view>
+  <view class='bottom_text_1'>— 抽奖活动 —</view>
+  <view class='bottom_text_2'>越来越多的人选择我们</view>
+  <view style='height:250rpx;background:#f0f0f0;'></view>
+</view>
+
+
+
+<view class='tab' style='z-index:10'>
+  <view class='begin' bindtap='start' hover-class="button-hover" hover-stay-time="10">发起新抽奖</view>
+</view>

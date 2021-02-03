@@ -1,0 +1,464 @@
+/* pages/lottery_detail/lottery_detail.wxss */
+
+page {
+  height: 100%;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+
+.lottery_detail_img {
+  height: 350rpx;
+  width: 100%;
+}
+
+.Self_Lottery_view_text_view {
+  width: 90%;
+  height: fit-content;
+  position: relative;
+  margin: auto;
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.Self_Lottery_view_text_view_1 {
+  font-size: 37rpx;
+  display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.Self_Lottery_view_text_view_2 {
+  font-size: 28rpx;
+  font-weight: 500rpx;
+  margin-top: 15rpx;
+  color: rgb(82, 82, 82);
+}
+
+.Self_Lottery_view_text_view_3 {
+  font-size: 28rpx;
+  font-weight: 600rpx;
+  margin-top: 15rpx;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  color: rgb(82, 82, 82);
+}
+
+.Self_Lottery_view_text_view_3_2 {
+  background: rgba(165, 165, 165, 0.308);
+  padding: 1rpx 15rpx 1rpx 15rpx;
+  margin-left: 15rpx;
+  font-size: 25rpx;
+  font-weight: 700rpx;
+  color: rgb(34, 34, 34);
+}
+
+.separator {
+  height: 0.3rpx;
+  width: 90%;
+  background: rgba(128, 128, 128, 0.315);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 35rpx;
+}
+
+.week_view {
+  width: 90%;
+  height: fit-content;
+  position: relative;
+  margin: auto;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.week_view_img {
+  height: 37rpx;
+  width: 37rpx;
+  margin-left: 15rpx;
+}
+
+.week_view_1 {
+  width: 50rpx;
+}
+
+.week_view_text1 {
+  font-size: 27rpx;
+  margin-left: 15rpx;
+  width: 400rpx;
+}
+
+.week_view_text2 {
+  font-size: 25rpx;
+  width: 170rpx;
+  font-weight: 600;
+  color: rgb(0, 95, 0);
+  height: 50rpx;
+  border-radius: 35rpx;
+  border: 1rpx solid rgb(0, 95, 0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-left: 10rpx;
+}
+
+.toast_view {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: rgba(201, 201, 201, 0.562);
+}
+
+.toast_view_1 {
+  font-size: 35rpx;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  background: rgba(255, 215, 106, 0.562);
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(61, 47, 0);
+  flex-direction: column;
+}
+
+.toast_view_1_text {
+  height: fit-content;
+  width: 80%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 50rpx;
+}
+
+.toast_view_1_img {
+  width: 32rpx;
+  height: 18rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+}
+
+.text_much {
+  width: 90%;
+  height: fit-content;
+  margin: auto;
+  margin-top: 35rpx;
+  margin-bottom: 35rpx;
+}
+
+.text_much_text_1 {
+  font-size: 28rpx;
+}
+
+.text_much_color1 {
+  width: 90%;
+  height: 80rpx;
+  position: relative;
+  margin: auto;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: rgba(129, 236, 134, 0.479);
+  border-radius: 50rpx;
+  padding: 10rpx 20rpx 10rpx 20rpx;
+}
+
+.text_much_color2 {
+  width: 90%;
+  height: 80rpx;
+  position: relative;
+  margin: auto;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: rgba(8, 204, 218, 0.568);
+  border-radius: 40rpx;
+}
+
+.text_much_color_view_1 {
+  font-size: 27rpx;
+  margin-left: 15rpx;
+  width: 400rpx;
+}
+
+.text_much_color_text_1_1 {
+  font-size: 27rpx;
+  width: 230rpx;
+  font-weight: 600;
+  color: rgb(0, 95, 0);
+  height: 58rpx;
+  border-radius: 35rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: auto;
+  margin-left: 22rpx;
+}
+
+.text_much_color_view_2 {
+  font-size: 27rpx;
+  margin-left: 15rpx;
+  width: 400rpx;
+}
+
+.text_much_color_text_1_2 {
+  font-size: 29rpx;
+  width: 170rpx;
+  font-weight: 600;
+  color: rgb(0, 95, 0);
+  height: 58rpx;
+  border-radius: 35rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-left: 75rpx;
+}
+
+.text_much_color_text_2_1 {
+  font-size: 27rpx;
+  width: 170rpx;
+  font-weight: 600;
+  color: rgb(0, 95, 0);
+  height: 58rpx;
+  border-radius: 35rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-left: 210rpx;
+}
+
+.Everday_Lottery_text {
+  height: fit-content;
+  width: 90%;
+  margin: auto;
+  /* background: blue; */
+}
+
+.Everday_Lottery_text_1 {
+  height: fit-content;
+  width: 100%;
+  /* background: rgb(71, 63, 78); */
+  color: red;
+  font-size: 27rpx;
+}
+
+.Everday_Lottery_text_2 {
+  height: fit-content;
+  width: 100%;
+  /* background: rgb(71, 63, 78); *//* color: red; */
+  font-size: 27rpx;
+  margin-top: 10rpx;
+}
+
+.Everday_Lottery_text_3 {
+  height: fit-content;
+  width: 90%;
+  /* background: rgb(71, 63, 78); */
+  color: #716349;
+  font-size: 27rpx;
+  margin-top: 20rpx;
+  margin-bottom: 50rpx;
+  margin-left: 48rpx;
+  margin-right: 12rpx;
+  background: #fff6e5;
+}
+
+.Everday_Lottery_text_4 {
+  height: 20rpx;
+  width: 100%;
+  font-size: 20rpx;
+}
+
+.everyday_view {
+  display: flex;
+  height: 95rpx;
+  width: 90%;
+  flex-direction: row;
+  position: relative;
+  margin: auto;
+}
+
+.Everday_Lottery_view {
+  height: fit-content;
+  width: 100%;
+  background: #fff6e5;
+  margin: auto;
+  border: 0.5rpx solid #eae4d5;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.grey_line {
+  height: 37rpx;
+  width: 100%;
+  background: #f0f0f0;
+}
+
+.grey_block {
+  height: 300rpx;
+  width: 100%;
+  background: #f0f0f0;
+}
+
+.join {
+  height: fit-content;
+  width: 80%;
+  margin: auto;
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
+}
+
+.join_img {
+  width: 100%;
+  height: 100%;
+}
+
+.join_img_view {
+  width: 230rpx;
+  height: 230rpx;
+  margin: auto;
+}
+
+.image_view{
+  height: 60rpx;
+  width: 60rpx;
+  padding:auto;
+
+}
+
+.join_text_view {
+  font-size: 27rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25rpx;
+  margin-bottom: 25rpx;
+}
+
+.join_pic_view {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.join_pic_view_img {
+  width: 65rpx;
+  height: 65rpx;
+  margin-left: 5rpx;
+  margin-right: 5rpx;
+}
+
+.bottom {
+  position: fixed;
+  bottom: -50rpx;
+  background: white;
+  height: 200rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-top: 1rpx solid rgba(194, 194, 194, 0.76);
+}
+
+.black_view {
+  width: 90%;
+  height: 50%;
+  margin: auto;
+  background: #575757;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25rpx;
+}
+
+.black_text1 {
+  color: white;
+  font-size: 30rpx;
+}
+
+.black_text2 {
+  color: #7f7f7f;
+  font-size: 26rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+}
+
+.linear {
+  height: 7rpx;
+  width: 100%;
+  background: #f0f0f0;
+  margin: auto;
+  margin-top: 35rpx;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.canvas-content{
+  display: flex;
+  top: 0;
+  left: 0;
+  /* left: 500%;  分享图不显示在页面上面，就将画布设置在页面之外*/
+}
+
+.save-button {
+  position: fixed;
+  width: 80rpx;
+  height: 80rpx;
+  bottom: 40rpx;
+  right: 40rpx;
+  border-radius: 50rpx;
+  z-index: 200;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.save-button .share-image {
+  position: absolute;
+  top: 22rpx;
+  left: 22rpx;
+  width: 36rpx;
+  height: 36rpx;
+}

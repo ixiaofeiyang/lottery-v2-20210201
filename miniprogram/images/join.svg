@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="112" height="112" viewBox="0 0 112 112">
+  <g id="组_25" data-name="组 25" transform="translate(-3164 -971)">
+    <g id="椭圆_14" data-name="椭圆 14" transform="translate(3164 971)" fill="#d25446" stroke="#d25446" stroke-width="1">
+      <circle cx="56" cy="56" r="56" stroke="none"/>
+      <circle cx="56" cy="56" r="55.5" fill="none"/>
+    </g>
+    <text id="参与抽奖" transform="translate(3188 1019)" fill="#f6f8ef" font-size="16" font-family="SimHei"><tspan x="0" y="14">参与抽奖</tspan></text>
+  </g>
+</svg>

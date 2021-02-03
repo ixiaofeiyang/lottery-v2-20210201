@@ -1,0 +1,32 @@
+
+
+.pinfor{
+  position: relative;
+  width: 90%;
+  height: 80rpx;
+  margin: auto;
+}
+.right{
+  position: absolute;
+  width: 50rpx;
+  height: 50rpx;
+  top:8rpx;
+  right: 0rpx;
+}
+
+.line{
+  position: relative;
+  width: 90%;
+  margin: auto;
+  height: 5rpx;
+  background-color: #e7e7e7;
+}
+.need{
+  position: relative;
+  width: 90%;
+  margin: auto;
+  margin-top: 30rpx;
+  font-size: 28rpx;
+  color:#9b9b9b;
+  line-height: 50rpx;
+}

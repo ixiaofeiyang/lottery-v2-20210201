@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12.027" height="7.143" viewBox="0 0 12.027 7.143">
+  <g id="组_24" data-name="组 24" transform="translate(-1268.973 426.143)">
+    <g id="矩形_17" data-name="矩形 17" transform="translate(1269 -423)" fill="#d5cab6" stroke="#d5cab6" stroke-width="1">
+      <rect width="4" height="4" rx="1" stroke="none"/>
+      <rect x="0.5" y="0.5" width="3" height="3" rx="0.5" fill="none"/>
+    </g>
+    <g id="矩形_18" data-name="矩形 18" transform="translate(1277 -423)" fill="#d5cab6" stroke="#d5cab6" stroke-linejoin="round" stroke-width="1">
+      <rect width="4" height="4" rx="1" stroke="none"/>
+      <rect x="0.5" y="0.5" width="3" height="3" rx="0.5" fill="none"/>
+    </g>
+    <path id="路径_2" data-name="路径 2" d="M1269.467-421.313" fill="none" stroke="#d5cab6" stroke-width="1"/>
+    <path id="路径_3" data-name="路径 3" d="M1269.467-422.188a5.284,5.284,0,0,1,.962-2.3,4.266,4.266,0,0,1,2.027-1.152" fill="none" stroke="#d5cab6" stroke-width="1"/>
+    <path id="路径_4" data-name="路径 4" d="M1269.467-422.511h0a4.911,4.911,0,0,1,.977-2.349,3.83,3.83,0,0,1,2.257-1.106" transform="translate(8 0.322)" fill="none" stroke="#d5cab6" stroke-width="1"/>
+  </g>
+</svg>

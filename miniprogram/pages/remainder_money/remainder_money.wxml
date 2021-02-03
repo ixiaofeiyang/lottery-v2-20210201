@@ -1,0 +1,29 @@
+<navBar title-text="余额" background="white" back-icon="/images/back@3x.png" bindback="back" />
+
+<!-- 配置 自定义的title -->
+<!-- <view style='height: {{88}}px;'></view> -->
+<view style='height: {{top_height}}px;'></view>
+<scroll-view>
+
+  <view style='height:30rpx;'></view>
+
+  <view class='remainder'>
+    <view>当前余额</view>
+    <view style='font-size:60rpx;font-weight:800;color:black;margin-top:30rpx;'>￥321.32</view>
+  </view>
+
+  <view style='height:30rpx;'></view>
+  <view style='width:90%;margin:auto;color:gray;font-size:28rpx;line-height:45rpx;'>余额不能用于红打底裤袜泡泡袜的怕大王大盘哇大家晚安京东呃就平静安稳平淡瓦片的大王大盘。</view>
+  <view style='height:30rpx;'></view>
+
+  <view class='get_money'>去公众号提现</view>
+  <view style='height:30rpx;'></view>
+  <view class='get_money_record'>交易记录</view>
+
+
+</scroll-view>
+
+<view class='bottom_contact' style='width:100%;font-size:28rpx;color:rgb(0, 150, 236);display: flex;justify-content:center'>
+  <view style='color:gray; margin-right:15rpx;'>未收到提现超过 2 个工作日?</view>
+  <view>联系我们</view>
+</view>

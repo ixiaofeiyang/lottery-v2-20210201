@@ -1,0 +1,15 @@
+/* pages/look_address/look_address.wxss */
+page{
+  background: #f0f0f0;
+}
+
+.address1{
+  width: 100%;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90rpx;
+  background: white;
+
+}

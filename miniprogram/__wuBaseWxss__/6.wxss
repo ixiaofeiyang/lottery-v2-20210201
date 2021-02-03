@@ -1,0 +1,614 @@
+@import "1.wxss";
+
+.gpc {
+    position: relative;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+    left: 0;
+    transition: left .4s;
+}
+
+.gpc.touch-move-active {
+    left: -80px;
+}
+
+.gpc .gpc-1-container {
+    position: relative;
+}
+
+.gpc .gpc-1-container .del {
+    position: absolute;
+    right: -73px;
+    top: 0;
+    height: 100%;
+    display: flex;
+}
+
+.gpc .gpc-1-container .del image {
+    align-self: center;
+}
+
+.gpc .gpc-2-container {
+    position: relative;
+}
+
+.gpc .gpc-2-container .del {
+    position: absolute;
+    right: -75px;
+    top: 0;
+    height: 100%;
+    display: flex;
+}
+
+.gpc .gpc-2-container .del image {
+    align-self: center;
+}
+
+.gpc .gpc-1 {
+    padding-bottom: 16px;
+}
+
+.gpc .gpc-1.highlight {
+    background: #ddd;
+}
+
+.gpc .gpc-1 .gpc-1-bg {
+    position: relative;
+    width: 100%;
+}
+
+.gpc .gpc-1 .gpc-1-bg .prize-image {
+    width: 100%;
+    display: block;
+}
+
+.gpc .gpc-1 .gpc-1-prize {
+    margin: 10px 18px 0;
+    font-size: 17px;
+    letter-spacing: .5px;
+    color: rgba(0,0,0,0.9);
+}
+
+.gpc .gpc-1 .gpc-1-prize .gpc-1-prize-name {
+    margin-right: 8px;
+}
+
+.gpc .gpc-1 .gpc-1-prize .gpc-1-prize-icon {
+    position: relative;
+    top: -1px;
+}
+
+.gpc .gpc-1 .gpc-1-desc-count {
+    margin: 7px 18px 0;
+    font-size: 13px;
+    letter-spacing: .4px;
+    color: rgba(0,0,0,0.5);
+}
+
+.gpc .gpc-2 {
+    padding: 19px 18px;
+    font-size: 15px;
+    display: flex;
+    height: 22px;
+    overflow: hidden;
+    color: #1a1a1a;
+    align-items: center;
+}
+
+.gpc .gpc-2.highlight {
+    background: #ddd;
+}
+
+.gpc .gpc-2 .gpc-2-prize-name {
+    opacity: .8;
+    letter-spacing: .4px;
+    margin-right: 8px;
+    flex: 0 1 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: break-word;
+    word-break: break-all;
+    align-self: center;
+}
+
+.gpc .gpc-2 .gpc-2-prize-name.gpc-5-prize-name {
+    max-width: initial;
+    flex-shrink: 1;
+    margin-right: 0;
+}
+
+.gpc .gpc-2 .gpc-2-prize-dot {
+    flex: 0 0 auto;
+    align-self: center;
+    margin-right: 8px;
+}
+
+.gpc .gpc-2 .gpc-2-prize-dot.ios {
+    position: relative;
+    bottom: -1px;
+}
+
+.gpc .gpc-2 .gpc-2-prize-icon {
+    position: relative;
+    top: -1px;
+    font-weight: 500;
+    flex: 0 0 auto;
+    align-self: center;
+}
+
+.gpc .gpc-2 .gpc-2-prize-count {
+    font-weight: 500;
+    flex: 0 0 auto;
+    align-self: center;
+}
+
+.gpc .gpc-2 .gpc-2-prize-date {
+    font-size: 14px;
+    color: #0a0b0d;
+    letter-spacing: .3px;
+    opacity: .4;
+    flex: 1 0 auto;
+    text-align: right;
+    margin-left: 10px;
+    align-self: center;
+}
+
+.gpc .gpc-2 .arrow-right {
+    width: 12px;
+    padding-left: 9px;
+    flex: 0 0 auto;
+    align-self: center;
+}
+
+.gpc .gpc-2 .arrow-right image {
+    position: relative;
+    left: -9px;
+    top: 3px;
+}
+
+.gpc .gpc-3 {
+    position: relative;
+}
+
+.gpc .gpc-3.highlight {
+    background: #ddd;
+}
+
+.gpc .gpc-3 .gpc-3-bg {
+    width: 100%;
+    position: relative;
+    border-top: 1rpx solid #d8d8d8;
+}
+
+.gpc .gpc-3 .gpc-3-bg .prize-bg-wraper {
+    overflow: hidden;
+}
+
+.gpc .gpc-3 .gpc-3-bg .prize-bg-wraper image {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.gpc .gpc-3 .gpc-3-bg .prize-bg-wraper .gpc-3-bg-sponsor {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 11px;
+    font-size: 13px;
+    color: #ffffff;
+    background-color: #808080;
+    opacity: .9;
+}
+
+.gpc .gpc-3 .gpc-3-bg .prize-image {
+    top: -10%;
+}
+
+.gpc .gpc-3 .gpc-3-game-user-end {
+    position: absolute;
+    top: 35px;
+    left: 45%;
+    width: 104px;
+    height: 104px;
+    text-align: center;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.8);
+    box-shadow: 0 3px 10.5px 0 rgba(0,0,0,0.3);
+}
+
+.gpc .gpc-3 .gpc-3-game-user-end .circle {
+    width: 92px;
+    height: 92px;
+    line-height: 92px;
+    text-align: center;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    color: rgba(255,255,255,0.8);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.gpc .gpc-3 .gpc-3-conditions {
+    display: flex;
+    padding: 0 15px 2px;
+    padding-top: 5px;
+    align-items: flex-start;
+    align-items: center;
+}
+
+.gpc .gpc-3 .gpc-3-conditions .gpc-3-conditions-label {
+    font-size: 13px;
+    color: #808080;
+    flex: 0 0 auto;
+    position: relative;
+    top: -3px;
+}
+
+.gpc .gpc-3 .gpc-3-conditions .gpc-3-conditions-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+}
+
+.gpc .gpc-3 .gpc-3-conditions .gpc-3-conditions-item {
+    background: #f0f0f0;
+    padding: 0 10px 0 8px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    height: 20px;
+}
+
+.gpc .gpc-3 .gpc-3-conditions .gpc-3-conditions-item image {
+    width: 12px;
+    height: 12px;
+    margin-right: 3px;
+}
+
+.gpc .gpc-3 .gpc-3-conditions .gpc-3-conditions-item text {
+    font-size: 11px;
+    font-weight: bold;
+    color: #808080;
+}
+
+.gpc .gpc-3 .gpc-3-prize-container {
+    padding-top: 13px;
+    display: flex;
+    position: relative;
+}
+
+.gpc .gpc-3 .gpc-3-prize-container .gpc-3-sponsor {
+    flex: 0 0 auto;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 8px;
+    margin: 0 15px;
+    font-size: 13px;
+    color: #575757;
+    position: relative;
+}
+
+.gpc .gpc-3 .gpc-3-prize-container .gpc-3-sponsor:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #808080;
+    box-sizing: border-box;
+    width: 200%;
+    height: 200%;
+    transform: scale(.5);
+    transform-origin: left top;
+}
+
+.gpc .gpc-3 .gpc-3-prize-container .gpc-3-guaranteed {
+    flex: 0 0 auto;
+}
+
+.gpc .gpc-3 .gpc-3-prize-container .gpc-3-guaranteed image {
+    width: 69px;
+    height: 22px;
+    margin: 0 15px;
+}
+
+.gpc .gpc-3 .gpc-3-long-guaranteed {
+    position: absolute;
+    right: 12px;
+    bottom: -32px;
+}
+
+.gpc .gpc-3 .gpc-3-long-guaranteed image {
+    width: 104px;
+    height: 22px;
+}
+
+.gpc .gpc-3 .gpc-3-prize {
+    flex: 1 1 auto;
+    margin: 0 0 0 15px;
+    font-size: 17px;
+    letter-spacing: .5px;
+    display: flex;
+    position: relative;
+}
+
+.gpc .gpc-3 .gpc-3-prize .gpc-3-prizes {
+    flex: 1 1 auto;
+    position: relative;
+}
+
+.gpc .gpc-3 .gpc-3-prize .gpc-3-prize-group-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 6px;
+    position: relative;
+    bottom: -4px;
+}
+
+.gpc .gpc-3 .gpc-3-prize .gpc-3-prize-name-label {
+    width: 58px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 6px;
+    position: relative;
+    top: 2px;
+}
+
+.gpc .gpc-3 .gpc-3-prize .gpc-3-prize-name {
+    color: rgba(0,0,0,0.8);
+    margin-right: 5px;
+    display: inline;
+}
+
+.gpc .gpc-3 .gpc-3-prize .gpc-3-prize-icon {
+    position: relative;
+    top: -1px;
+}
+
+.gpc .gpc-3 .gpc-3-prize .gpc-3-prize-desc {
+    flex: 1 1 auto;
+}
+
+.gpc .gpc-3 .gpc-3-prize .gpc-3-prize-desc.gpc-3-prize-desc-muti {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.gpc .gpc-3 .gpc-3-prize .gpc-3-prize-desc.gpc-3-prize-desc-muti:last-child {
+    margin-bottom: 0;
+}
+
+.gpc .gpc-3 .gpc-3-prize .gpc-3-prize-desc .money-value {
+    color: #cc4b3d;
+}
+
+.gpc .gpc-3 .gpc-3-prize .gpc-3-prize-edit {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.gpc .gpc-3 .gpc-3-prize .gpc-3-prize-state {
+    flex: 0 0 76px;
+}
+
+.gpc .gpc-3 .gpc-3-prize .gpc-3-prize-state .gpc-3-prize-state-tag {
+    width: 74px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    border-radius: 13.5px;
+    background-color: #fff;
+    border: solid 1rpx #c3a428;
+    font-size: 14px;
+    color: #c3a428;
+}
+
+.gpc .gpc-3 .gpc-3-desc-count {
+    margin: 7px 15px 7px;
+    font-size: 13px;
+    letter-spacing: .3px;
+    color: #808080;
+}
+
+.gpc .gpc-3 .gpc-3-desc-count .join-tag {
+    display: inline-block;
+    color: #3f9127;
+    font-weight: bold;
+}
+
+.gpc .gpc-3 .gpc-3-desc-count .join-tag .split-line {
+    border-right: 1px solid #499e31;
+    margin-right: 8px;
+    margin-left: 2px;
+    height: 12px;
+    display: inline-block;
+    position: relative;
+    bottom: -1px;
+}
+
+.gpc .gpc-3 .gpc-3-desc-count .join-tag image {
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+    position: relative;
+    bottom: -3px;
+}
+
+.gpc .gpc-3 .gpc-3-initiator {
+    margin: 17px 0 0 15px;
+    padding-right: 15px;
+    border-top: 1rpx solid rgba(0,0,0,0.1);
+    display: flex;
+    padding-top: 10px;
+    font-size: 13px;
+    letter-spacing: .3px;
+    color: rgba(0,0,0,0.9);
+}
+
+.gpc .gpc-3 .gpc-3-initiator image {
+    width: 22px;
+    height: 22px;
+    flex: 0 0 auto;
+    border-radius: 50%;
+}
+
+.gpc .gpc-3 .gpc-3-initiator .gpc-3-initiator-desc {
+    flex: 1 1 auto;
+    align-self: center;
+}
+
+.gpc .gpc-3 .gpc-3-initiator .gpc-3-initiator-name {
+    flex: 0 0 auto;
+    margin-left: 9px;
+    align-self: center;
+}
+
+.gpc .gpc-3 .gpc-3-initiator form {
+    display: block;
+    width: 100%;
+}
+
+.gpc .gpc-3 .gpc-3-initiator .gpc-3-initiator-contact {
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: .4px;
+    color: #ce6155;
+    text-align: center;
+    flex: 1 1 auto;
+    height: 35px;
+    line-height: 35px;
+    border: none;
+    background: transparent;
+}
+
+.gpc .gpc-3 .gpc-3-initiator .gpc-3-initiator-contact:after {
+    display: none;
+}
+
+.gpc .gpc-3 .gpc-3-initiator .gpc-3-initiator-contact.highlight {
+    color: #e6b0aa;
+}
+
+.gpc .gpc-3 .gpc-3-share {
+    margin: 15px 15px 0;
+    padding: 17px 0 7px;
+    text-align: center;
+    border-top: 1rpx solid rgba(0,0,0,0.08);
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: .4px;
+    color: #ce6155;
+}
+
+.gpc .gpc-3 .gpc-3-share.highlight {
+    color: #e6b0aa;
+}
+
+.gpc .gpc-3 .indent-split-line {
+    margin-left: 15px;
+    height: 0;
+    border-top: 1rpx solid rgba(0,0,0,0.1);
+}
+
+.gpc .gpc-3 .gpc-3-redirect-mina {
+    height: 50px;
+    display: flex;
+    font-size: 15px;
+    letter-spacing: .3px;
+    color: rgba(0,0,0,0.9);
+    align-items: center;
+}
+
+.gpc .gpc-3 .gpc-3-redirect-mina.highlight {
+    background: #ddd;
+}
+
+.gpc .gpc-3 .gpc-3-redirect-mina image {
+    width: 16px;
+    height: 16px;
+    margin-left: 7px;
+}
+
+.gpc .gpc-3 .gpc-3-redirect-mina .redirect-mina-label {
+    flex: 1 1 auto;
+    margin-left: 15px;
+}
+
+.gpc .gpc-3 .gpc-3-redirect-mina .arrow-right {
+    border: solid #c7c7cc;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(-45deg);
+    position: relative;
+    flex: 0 0 auto;
+    margin-left: 6px;
+    align-self: center;
+    margin-right: 15px;
+}
+
+.gpc .gpc-3 .gpc-3-padding-bottom {
+    width: 100%;
+    height: 10px;
+}
+
+.gpc .sponsor {
+    position: absolute;
+    height: 26px;
+    display: flex;
+    right: 0;
+    bottom: 15px;
+}
+
+.gpc .sponsor .tag-bg-left {
+    height: 26px;
+    width: 13px;
+    flex: 0 0 auto;
+}
+
+.gpc .sponsor .sponsor-main {
+    position: relative;
+    display: flex;
+}
+
+.gpc .sponsor .sponsor-main .sponsor-text {
+    font-size: 12px;
+    letter-spacing: .3px;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+    flex: 0 0 auto;
+    height: 26px;
+    line-height: 26px;
+}
+
+.gpc .sponsor .sponsor-main .sponsor-logo {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 7px;
+    align-self: center;
+}
+
+.gpc .sponsor .sponsor-main .tag-bg-middle {
+    width: 100%;
+    height: 26px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.gpc .sponsor .tag-bg-right {
+    height: 26px;
+    width: 10px;
+    flex: 0 0 auto;
+}

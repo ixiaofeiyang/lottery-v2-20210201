@@ -1,0 +1,66 @@
+.cover {
+    position: fixed;
+    z-index: -100;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.25);
+    opacity: 0;
+}
+
+.gamechoosesheet {
+    position: fixed;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 180px;
+    bottom: -180px;
+    background: #66a3a3;
+    transition: transform 250ms;
+}
+
+.gamechoosesheet.hide {
+    transform: translateY(0);
+}
+
+.gamechoosesheet.show {
+    transform: translateY(-174px);
+}
+
+.gamechoosesheet.show.iPhoneX {
+    transform: translateY(-191px);
+}
+
+.gamechoosesheet .item {
+    background: #fff;
+    padding: 18px 0;
+    border-bottom: 3px solid #f0f0f0;
+}
+
+.gamechoosesheet .item.iPhoneX {
+    padding-bottom: 35px;
+}
+
+.gamechoosesheet .item .item-name {
+    font-size: 18px;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 3px;
+}
+
+.gamechoosesheet .item .item-name image {
+    width: 15px;
+    height: 15px;
+    margin-left: 6px;
+}
+
+.gamechoosesheet .item .item-desc {
+    font-size: 14px;
+    text-align: center;
+    color: #999999;
+}
+
+.gamechoosesheet .item.hover {
+    background: #ccc;
+}

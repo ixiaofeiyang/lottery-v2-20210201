@@ -1,0 +1,17 @@
+.addIcon {
+  position: relative;
+
+  height: 60rpx;
+  width: 200rpx;
+  text-align: center;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  font-weight: 500;
+  border: 2rpx solid #333;
+  color: black;
+}
+
+.dd{
+  height: 100rpx;
+  width: 100%;
+}

@@ -1,0 +1,18 @@
+<view> 2</view>
+<view> 2</view>
+<view> 2</view>
+<view> 2</view>
+<view> 2</view>
+<view> 2</view>
+
+
+<view class="pinfor"> 查看中奖者收获信息
+  <image src="/static/right.svg" class="right"></image>
+</view>
+
+<view class="line"></view>
+<view class="need">
+  <view> 抽奖开奖后，请根据中将人联系信息于7日内发奖。</view>
+  <view>若中奖人不满足发奖要求时，建议短信告知</view>
+
+</view>

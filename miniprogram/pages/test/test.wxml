@@ -1,0 +1,6 @@
+<view style='height:300rpx;width:100%;background:red;'></view>
+
+<view class='addIcon' bindtap="choosepic1" style='background:white;'>
+  上传奖品照片
+</view>
+<button class='dd' bindtap='upload'>shangc</button>

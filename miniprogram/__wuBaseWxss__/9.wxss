@@ -1,0 +1,213 @@
+.pay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -10;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pay.show {
+    z-index: 962;
+    opacity: 1;
+}
+
+.pay.show .pay-card {
+    transform: scale(1);
+}
+
+.pay .pay-cover {
+    background: rgba(0,0,0,0.66);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 900;
+}
+
+.pay .pay-card {
+    transition: transform .5s;
+    z-index: 999;
+    background: #fff;
+    padding: 0 18px 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: scale(.7);
+    max-height: 90%;
+    overflow: scroll-y;
+    box-sizing: border-box;
+}
+
+.pay .pay-card .pay-header {
+    width: 192px;
+    height: 89px;
+    border-bottom: 1rpx solid rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.pay .pay-card .pay-header image {
+    margin-top: 30px;
+}
+
+.pay .pay-card .pay-body {
+    width: 100%;
+    margin-top: 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pay .pay-card .pay-button {
+    margin-top: 19px;
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    background-color: #dbaa13;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: .4px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.pay .pay-card .pay-button.highlight {
+    background: #b5971f;
+}
+
+.pay .pay-card .pay-close {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 0;
+    display: flex;
+}
+
+.pay .pay-card .pay-close image {
+    width: 12px;
+    height: 12px;
+    align-self: flex-end;
+}
+
+.pay-title {
+    font-size: 14px;
+    letter-spacing: .3px;
+    color: rgba(0,0,0,0.4);
+}
+
+.pay-title .count {
+    color: #cc4b3d;
+    font-weight: bold;
+}
+
+.pay-title .del {
+    text-decoration: line-through;
+}
+
+.pay-title .title-yellow {
+    color: #c3a428;
+}
+
+.pay-desc {
+    font-size: 14px;
+    letter-spacing: .3px;
+    color: #666666;
+}
+
+.pay-desc image {
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+    margin-bottom: -3px;
+}
+
+.pay-desc .pay-desc-item {
+    font-weight: 500;
+    margin-top: 23px;
+    display: flex;
+}
+
+.pay-desc .pay-desc-item image {
+    flex: 0 0 auto;
+    display: inline-block;
+}
+
+.pay-desc .pay-desc-item:last-child {
+    margin-bottom: 23px;
+}
+
+.pay-price {
+    margin-top: 26px;
+    padding-bottom: 17px;
+    font-size: 14px;
+    letter-spacing: .3px;
+    color: rgba(0,0,0,0.4);
+    vertical-align: baseline;
+}
+
+.pay-price image {
+    position: relative;
+    bottom: -1px;
+    margin-right: 5px;
+}
+
+.pay-button-container {
+    margin-top: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.pay-button-container .pay-button {
+    height: 33px;
+    padding: 0 20px;
+    line-height: 33px;
+    background-color: #f0f0f0;
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 14px;
+    color: #c39c00;
+    font-weight: bolder;
+}
+
+.pay-button-container .pay-button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: solid 1px #c39c00;
+    box-sizing: border-box;
+    width: 200%;
+    height: 200%;
+    transform: scale(.5);
+    transform-origin: left top;
+}
+
+.pay-button-container .pay-button.highlight {
+    background-color: #cccccc;
+}
+
+.pay-button-container .pay-button .arrow-right {
+    border: solid #c39c00;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    flex: 0 0 auto;
+    margin-left: 2px;
+    position: relative;
+    top: -1px;
+}

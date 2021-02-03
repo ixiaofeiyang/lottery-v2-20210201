@@ -1,0 +1,35 @@
+<navBar title-text="我的发起" background="white" back-icon="/images/back@3x.png" bindback="back" />
+
+<view style='height: {{status + navHeight}}px;'></view>
+
+<scroll-view scroll-y='true'>
+  <view class='everyday_view'>
+    <view class='everyday_view_1'></view>
+    <view class='everyday_view_2'>
+    </view>
+  </view>
+  <view class='Everday_Lottery_view' bindtap='lottery' wx:for="{{home_show_data}}" wx:key="PK" data-id='{{item._id}}'>
+    <view>
+      <image class='img_everyday_view' src='{{item.pic1}}' mode='aspectFill'></image>
+    </view>
+
+    <view class='Everday_Lottery_text'>
+
+      <view class='Everday_Lottery_text_2' wx:if="{{item.number>=1}}">{{item.name1}} x{{item.num1}}</view>
+      <view class='Everday_Lottery_text_2' wx:if="{{item.number>=2}}">{{item.name2}} x{{item.num2}}</view>
+      <view class='Everday_Lottery_text_2' wx:if="{{item.number>=3}}">{{item.name3}} x{{item.num3}}</view>
+
+      <view class='Everday_Lottery_text_3' wx:if="{{item.way==1}}">{{item.time}} 自动开奖
+      <view class='Everday_Lottery_text_4'>{{item.status==1?"已结束":"正在进行"}}</view>
+       </view>
+      <view class='Everday_Lottery_text_3' wx:if="{{item.way==2}}"> 达到{{item.num}}人 自动开奖
+       <view class='Everday_Lottery_text_4'>{{item.status==1?"已结束":"正在进行"}}</view>
+      </view>
+      <view class='Everday_Lottery_text_3' wx:if="{{item.way==3}}"> 发起人 手动开奖
+        <view class='Everday_Lottery_text_4'>{{item.status==1?"已结束":"正在进行"}}</view>
+      </view>
+
+    </view>
+  </view>
+  <view style='height:200rpx;width:100%;'></view>
+</scroll-view>

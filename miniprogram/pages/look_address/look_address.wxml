@@ -1,0 +1,12 @@
+<navBar title-text="中奖者地址" back-icon="/images/back@3x.png" background="white" bindback="back" />
+
+
+<!-- 配置 自定义的title -->
+<!-- <view style='height: {{height}}px;'></view> -->
+<view style='height: {{88}}px;'></view>
+
+<view class='address1'>李坤</view>
+<view class='address1'>陕西省 西安市 长安区</view>
+<view class='address1'>详细地址详细地址详细</view>
+<view class='address1'>手机号：131313132113</view>
+<view class='address1'>邮编：313131</view>

@@ -1,0 +1,29 @@
+<view class='title_view'>
+  <view class='nav' style='height: {{status + navHeight}}px;'>
+    <view class='status' style='height: {{status}}px;{{containerStyle}};'></view>
+    <view class='navbar' style='height:{{navHeight}}px;{{containerStyle}};'>
+      <view class='back-icon' bindtap='back'>
+        <image src='/images/back@3x.png'></image>
+      </view>
+
+
+
+      <view class='nav-title' style=' width:70%;display: flex;justify-content: flex-start; align-items: center;'>
+        <text style='{{textStyle}}'>抽奖参与用户</text>
+      </view>
+
+    </view>
+  </view>
+</view>
+
+<view style='height:{{status + navHeight}}px'></view>
+
+<view class='text1'>{{lottery.total}} 位参与者</view>
+
+<view class='text2' >
+  <view wx:for="{{data_user}}" >
+    <view class='img_class_view'>
+      <image class='img_class' src="{{item.avatarUrl}}"></image>
+    </view>
+  </view>
+</view>

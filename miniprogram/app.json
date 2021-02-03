@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/welcome/welcome",
+    "pages/try/try",
+    "pages/awardconfirm/awardconfirm",
+    "pages/question/question",
+    "pages/advice/advice",
+    "pages/list/list",
+    "pages/lottery_view_1/lottery_view_1",
+    "pages/awardprofile/awardprofile",
+    "pages/lottery_create/lottery_create",
+    "pages/selfpage/selfpage",
+    "pages/aspiration/aspiration",
+    "pages/test/test",
+    "pages/lottery_detail/lottery_detail",
+    "pages/logs/logs",
+    "pages/lottery_view_2/lottery_view_2",
+    "pages/lottery_view_3/lottery_view_3",
+    "pages/joinaward/joinaward",
+    "pages/input_id/input_id",
+    "pages/chakanrenshu/chakanrenshu",
+    "pages/lrjlottery/lrjlottery",
+    "pages/tip/tip",
+    "pages/auth/auth",
+    "pages/address/address"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "抽奖活动",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "usingComponents": {
+    "navBar": "/components/navBar/navBar",
+    "bottom": "/components/bottom/bottom",
+    "profile": "/components/profile/profile",
+    "shouquan": "/components/shouquan/shouquan"
+  },
+  "sitemapLocation": "sitemap.json"
+}

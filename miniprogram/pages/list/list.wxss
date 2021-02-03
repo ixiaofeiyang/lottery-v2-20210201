@@ -1,0 +1,56 @@
+.awardlist {
+  position: relative;
+  font-size: 35rpx;
+  width: 95%;
+  margin: auto;
+  font-weight: 500;
+  margin-bottom: 20rpx;
+  margin-top: 20rpx;
+  
+}
+
+.Firstprize {
+  position: relative;
+  width: 95%;
+  margin: auto;
+  min-height: 300rpx;
+  background-color: white;
+  border: 0.5rpx solid rgba(128, 128, 128, 0.459);
+  margin-bottom: 50rpx;
+}
+.Firstprize .top{
+  position: relative;
+  width: 100%;
+  height: 100rpx;
+  background-color: #f8f8f8;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+}
+
+.Firstprize .middle{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.middle .showlist{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 50rpx;
+  margin-top: 20rpx;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+}
+.showlist .pic{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+
+}

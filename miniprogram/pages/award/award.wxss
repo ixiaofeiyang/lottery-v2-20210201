@@ -1,0 +1,178 @@
+/* pages/award/award.wxss */
+
+.tab {
+  width: 100%;
+  height:10vh;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid rgba(235, 235, 235, 0.521);
+  background: white;
+}
+
+.begin {
+  width: 94%;
+  height: 100rpx;
+  margin-left: 3%;
+  margin-top: 1.5vh;
+  background: red;
+  color: white;
+  text-align: center;
+  font-size: 36rpx;
+  justify-content: center;
+  letter-spacing: 10rpx;
+  font-weight: 600;
+  line-height: 100rpx;
+  border-radius: 50rpx;
+}
+
+.pic {
+  width: 100%;
+  height: 400rpx;
+  
+}
+.time-picker{
+  width: 100%;
+  
+}
+.addIcon {
+  position: absolute;
+  margin-top: -400rpx;
+  margin-left: 500rpx;
+  height: 60rpx;
+  width: 200rpx;
+  text-align: center;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  font-weight: 500;
+  border: 2rpx solid #333;
+
+}
+.c{
+  font-size: 28rpx;
+  
+}
+.c1{
+  font-size: 28rpx;
+  text-align: center;
+  padding-left: 100rpx;
+}
+.textArea{
+  height: 400rpx;
+  width: 750rpx;
+  padding: 25rpx 25rpx; 
+
+  font-size: 30rpx;
+  
+  
+}
+.contaner {
+  width: 100%;
+  height: 1400rpx;
+  position: absolute;
+}
+
+.input1 {
+  height: 100%;
+  margin-left: -20rpx;
+  width: 600rpx;
+  text-align: right;
+  margin-right: 40rpx;
+}
+
+.input11 {
+  height: 100%;
+  line-height: 100rpx;
+  margin-left: 20rpx;
+  font-size: 32rpx;
+  width: 500rpx;
+}
+
+.maskLayer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: rgba(80, 80, 80, 0.5);
+  color: #333;
+  box-shadow: 0 0 50rpx rgba(0, 0, 0, 0.5);
+  border-top-right-radius: 30rpx;
+  border-top-left-radius: 30rpx;
+  z-index: 10;
+}
+
+.maskLayer .main {
+  width: 80%;
+  height: auto;
+  top: 40vh;
+  left: 10%;
+  background: white;
+  border-radius: 25rpx;
+  position: absolute;
+}
+
+.close {
+  width: 100%;
+  height: 100rpx;
+  text-align: center;
+  font-size: 32rpx;
+  line-height: 100rpx;
+}
+
+.picker {
+  height: 100rpx;
+  width: 100%;
+  background: black;
+}
+
+.mask1 {
+  width: 100%;
+  height: 300rpx;
+
+}
+.swipper1{
+  height: 90%;
+  width: 40%;
+  margin-left: 5%;
+
+}
+.swipper2{
+  height: 90%;
+  width: 20%;
+  margin-left: 5%;
+}
+.swipper3{
+  height: 90%;
+  width: 20%;
+  margin-left: 5%;
+}
+.button-hover{
+ opacity: 0.9;
+ background: #f7f7f7;
+}
+
+.bottom_text_1{
+  height: 50rpx;
+  width: 100%;
+  color: gray;
+  font-size: 37rpx;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f0f0;
+
+}
+
+.bottom_text_2{
+  height: 40rpx;
+  width: 100%;
+  color: rgb(161, 161, 161);
+  font-size: 18rpx;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f0f0;
+  
+}

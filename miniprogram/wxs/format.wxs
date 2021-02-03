@@ -1,0 +1,36 @@
+var currencyReg = getRegExp(".", "g");
+
+var rAvatar = getRegExp("^(https:\\/\\/wx.qlogo.cn\\/mmopen\\/vi_32\\/[^/]+\\/)(\\d+)$", "ig");
+
+module.exports = {
+    currency: function(num) {
+        num = num / 100;
+        return num.toFixed(2).toString().replace(currencyReg, function(c, i, a) {
+            return i && c !== "." && (a.length - i) % 3 === 0 ? "," + c : c;
+        });
+    },
+    wxAvatar: function(image, size) {
+        size = size || 96;
+        if (rAvatar.test(image)) {
+            return image.replace(rAvatar, "$1" + size);
+        } else {
+            return image;
+        }
+    },
+    groupUsers: function(users) {
+        return users.slice(0, 3);
+    },
+    conditionImage: function(type, value) {
+        if (type === "area") {
+            return "../images/icn-condition-location@3x.png";
+        } else if (type === "gender") {
+            if (value === "男") {
+                return "../images/icn-condition-male@3x.png";
+            } else {
+                return "../images/icn-condition-female@3x.png";
+            }
+        } else {
+            return "../images/icn-condition-more@3x.png";
+        }
+    }
+};

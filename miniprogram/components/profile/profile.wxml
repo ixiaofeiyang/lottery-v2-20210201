@@ -1,0 +1,233 @@
+<!-- <navBar 
+    title-text="我的"
+    background="white"
+    bindback="back"/>
+
+
+<bottom></bottom> -->
+
+<scroll-view>
+
+
+  <view class='separator1'></view>
+
+  <!-- <view class='user_info' bindtap='aspiration'> -->
+  <view class='user_info' >
+    <view class='user_info_img_view'>
+      <image src='{{avatarUrl}}' class='user_info_img'></image>
+    </view>
+    <view class='user_info_name_view'>{{nickname}}</view>
+
+    <view class='user_info_money_view'>
+      <!-- <text class='user_info_money_text'>心愿 4</text> -->
+      <text class='user_info_money_text'></text>
+      <!-- <image class='user_info_money_img' src='/images/kuohu.svg'></image> -->
+    </view>
+  </view>
+
+  <view class='lottery'>
+    <view class='lottery_info' bindtap='lottery_view_1'>
+      <view class='lottery_info_number'>{{all_lottery_length}}</view>
+      <view class='lottery_info_disc'>全部抽奖</view>
+    </view>
+
+    <view class='line'></view>
+
+    <view class='lottery_info' bindtap='lottery_view_2'>
+      <view class='lottery_info_number'>{{create_lottery_length}}</view>
+      <view class='lottery_info_disc'>发起抽奖</view>
+    </view>
+
+    <view class='line'></view>
+
+    <view class='lottery_info' bindtap='lottery_view_3'>
+      <view class='lottery_info_number'>{{bingo_lottery_record_length}}</view>
+      <view class='lottery_info_disc'>中奖纪录</view>
+    </view>
+
+  </view>
+
+  <view class='separator1'></view>
+
+  <view class='column_view_1'>
+
+    <!-- <view class='column' bindtap='go_to_selfpage'>
+      <view class='column_icon_1'>
+        <image class='column_icon_1_img' src='/images/icn-question@3x.png'></image>
+      </view>
+      <view class='column_text_1'>个人主页</view>
+      <view class='column_text_2'></view>
+      <view class='column_icon_2'>
+        <image class='user_info_money_img' src='/images/kuohu.svg'></image>
+      </view>
+    </view> -->
+
+    <!-- <view class='column' bindtap='go_to_remainder_money'>
+      <view class='column_icon_1'>
+        <image class='column_icon_1_img' src='/images/icn-account@3x.png'></image>
+      </view>
+      <view class='column_text_1'>余额</view>
+      <view class='column_text_2'></view>
+      <view class='column_icon_2'>
+        <image class='user_info_money_img' src='/images/kuohu.svg'></image>
+      </view>
+    </view> -->
+
+    <!-- <view class='line1'></view> -->
+
+    <!-- <view class='column'>
+      <view class='column_icon_1'>
+        <image class='column_icon_1_img' src='/images/icn-account@3x.png'></image>
+      </view>
+      <view class='column_text_1'>官方商城</view>
+      <view class='column_text_2'>NoCode Store</view>
+      <view class='column_icon_2'>
+        <image class='user_info_money_img' src='/images/kuohu.svg'></image>
+      </view>
+    </view> -->
+
+
+
+
+
+    <view class='column' bindtap='common_question'>
+      <view class='column_icon_1'>
+        <image class='column_icon_1_img' src='/images/wenti.png'></image>
+      </view>
+      <view class='column_text_1'>常见问题</view>
+      <view class='column_text_2'></view>
+      <view class='column_icon_2'>
+        <image class='user_info_money_img' src='/images/kuohu.svg'></image>
+      </view>
+    </view>
+
+    <view class='line1'></view>
+
+    <view class='column' bindtap='address'>
+      <view class='column_icon_1'>
+        <image class='column_icon_1_img' src='/images/shouhuo.png'></image>
+      </view>
+      <view class='column_text_1'>收货地址</view>
+      <view class='column_text_2'></view>
+      <view class='column_icon_2'>
+        <image class='user_info_money_img' src='/images/kuohu.svg'></image>
+      </view>
+    </view>
+
+    <view class='line1'></view>
+
+    <view class='column' bindtap='go_to_advice'>
+      <view class='column_icon_1'>
+        <image class='column_icon_1_img' src='/images/tousu.png'></image>
+      </view>
+      <view class='column_text_1'>投诉管理</view>
+      <view class='column_text_2'></view>
+      <view class='column_icon_2'>
+        <image class='user_info_money_img' src='/images/kuohu.svg'></image>
+      </view>
+    </view>
+
+
+
+  </view>
+
+  <!-- <view class='separator1'></view>
+
+  <view class='column_view_1'>
+
+
+    <view class='column' bindtap='go_to_selfpage'>
+      <view class='column_icon_1'>
+        <image class='column_icon_1_img' src='/images/icn-question@3x.png'></image>
+      </view>
+      <view class='column_text_1'>个人主页</view>
+      <view class='column_text_2'></view>
+      <view class='column_icon_2'>
+        <image class='user_info_money_img' src='/images/kuohu.svg'></image>
+      </view>
+    </view>
+
+    <view class='line1'></view>
+
+    <view class='column'>
+      <view class='column_icon_1'>
+        <image class='column_icon_1_img' src='/images/icn-mini-program@3x.png'></image>
+      </view>
+      <view class='column_text_1'>高级版管理</view>
+      <view class='column_text_2'></view>
+      <view class='column_icon_2'>
+        <image class='user_info_money_img' src='/images/kuohu.svg'></image>
+      </view>
+    </view>
+
+  </view> -->
+
+  <view class='separator1'></view>
+
+  <!-- <view class='column_view_1'>
+
+
+    <view class='column'>
+      <view class='column_icon_1'>
+        <image class='column_icon_1_img' src='/images/icn-question@3x.png'></image>
+      </view>
+      <view class='column_text_1'>发起人认证</view>
+      <view class='column_text_2'></view>
+      <view class='column_icon_2'>
+        <image class='user_info_money_img' src='/images/kuohu.svg'></image>
+      </view>
+    </view>
+
+    <view class='line1'></view>
+
+    <view class='column'>
+      <view class='column_icon_1'>
+        <image class='column_icon_1_img' src='/images/icn-mini-program@3x.png'></image>
+      </view>
+      <view class='column_text_1'>推广合作</view>
+      <view class='column_text_2'></view>
+      <view class='column_icon_2'>
+        <image class='user_info_money_img' src='/images/kuohu.svg'></image>
+      </view>
+    </view>
+
+    <view class='line1'></view>
+
+    <view class='column'>
+      <view class='column_icon_1'>
+        <image class='column_icon_1_img' src='/images/icn-mini-program@3x.png'></image>
+      </view>
+      <view class='column_text_1'>小程序推荐</view>
+      <view class='column_text_2'></view>
+      <view class='column_icon_2'>
+        <image class='user_info_money_img' src='/images/kuohu.svg'></image>
+      </view>
+    </view>
+
+    <view class='line1'></view>
+
+    <view class='column' bindtap='go_to_more'>
+      <view class='column_icon_1'>
+        <image class='column_icon_1_img' src='/images/icn-mini-program@3x.png'></image>
+      </view>
+      <view class='column_text_1'>更多</view>
+      <view class='column_text_2'></view>
+      <view class='column_icon_2'>
+        <image class='user_info_money_img' src='/images/kuohu.svg'></image>
+      </view>
+    </view>
+  </view> -->
+  
+  <view class='public_toBottom' wx:if="{{false}}">
+    <view class='public'>
+      <view class='public_text1'>
+        — 小肥羊出品 —
+      </view>
+      <view class='public_text2'>抽奖超过一百万人次</view>
+    </view>
+  </view>
+
+
+
+  <view class='adopt_bottom'></view>
+</scroll-view>
