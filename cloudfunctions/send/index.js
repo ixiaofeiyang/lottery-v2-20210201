@@ -2,7 +2,7 @@ const cloud = require('wx-server-sdk')
 const dateUtils = require('date-utils')
 
 cloud.init({ 
-  env: 'prod-8gpn8j2z387959ab' 
+  env: 'lucky-8gbfk03d88f11f2a' 
 })
 const db = cloud.database();
 // 云函数入口函数
